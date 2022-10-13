@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 
+import { Header } from '@Components';
+
 type MainLayoutProps = {
   meta: ReactNode;
   children: ReactNode;
@@ -7,8 +9,9 @@ type MainLayoutProps = {
 
 export function MainLayout({ meta, children }: MainLayoutProps) {
   return (
-    <div className="w-full px-1 antialiased text-gray-700">
+    <div className="w-full antialiased text-gray-700">
       {meta}
+      <Header />
       <div>{children}</div>
     </div>
   );
