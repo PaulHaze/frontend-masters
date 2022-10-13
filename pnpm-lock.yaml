@@ -12,6 +12,7 @@ specifiers:
   '@types/jest': ^29.1.2
   '@types/node': ^18.8.3
   '@types/react': ^18.0.21
+  '@types/testing-library__jest-dom': ^5.14.5
   '@typescript-eslint/eslint-plugin': ^5.40.0
   '@typescript-eslint/parser': ^5.40.0
   autoprefixer: ^10.4.12
@@ -71,6 +72,7 @@ devDependencies:
   '@types/jest': 29.1.2
   '@types/node': 18.8.3
   '@types/react': 18.0.21
+  '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
   '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
   autoprefixer: 10.4.12_postcss@8.4.18

@@ -15,8 +15,10 @@ export function MainLayout({ meta, children }: MainLayoutProps) {
   return (
     <div className={`w-full antialiased transition-all ${darkMode && 'dark'}`}>
       {meta}
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <div>{children}</div>
+      <div className="bg-white w-full dark:bg-slate-800 dark:text-offwhite ">
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <div>{children}</div>
+      </div>
     </div>
   );
 }

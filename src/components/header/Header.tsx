@@ -26,7 +26,7 @@ export function Header({ darkMode, toggleDarkMode }: HeaderProps) {
         </Link>
         <button
           type="button"
-          className="px-2 py-2 bg-white dark:bg-gray-500"
+          className="px-2 py-2 bg-white dark:bg-gray-500 dark:text-offwhite transition-colors duration-1000"
           onClick={toggleDarkMode}
         >
           SWITCH
