@@ -2,14 +2,19 @@ import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { DarkModeToggle } from './DarkModeToggle';
+
 import styles from './Header.module.scss';
+
+export type Mode = 'dark' | 'light' | 'toggle';
 
 export type HeaderProps = {
   darkMode: boolean;
-  toggleDarkMode: () => void;
+
+  setMode: (mode: Mode) => void;
 };
 
-export function Header({ darkMode, toggleDarkMode }: HeaderProps) {
+export function Header({ darkMode, setMode }: HeaderProps) {
   const logoSrc = darkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
   return (
     <div className="w-full">
@@ -24,14 +29,14 @@ export function Header({ darkMode, toggleDarkMode }: HeaderProps) {
             />
           </div>
         </Link>
-
-        <button
+        <DarkModeToggle setMode={setMode} darkMode={darkMode} />
+        {/* <button
           type="button"
           className="px-2 py-2 bg-white dark:bg-gray-500 dark:text-offwhite transition-colors duration-1000"
           onClick={toggleDarkMode}
         >
           SWITCH
-        </button>
+        </button> */}
       </div>
     </div>
   );

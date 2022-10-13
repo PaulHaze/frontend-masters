@@ -1,8 +1,6 @@
 import type { NextPage } from 'next';
 import { Meta, MainLayout } from '@/layouts';
 
-import { DarkModeToggle } from '@/components/header/DarkModeToggle';
-
 const Home: NextPage = () => {
   return (
     <MainLayout
@@ -15,9 +13,6 @@ const Home: NextPage = () => {
     >
       <div className="h-[100vh] flex flex-col items-center dark:text-offwhite">
         <h1>FrontEnd Masters Project</h1>
-        <div className="mt-10">
-          <DarkModeToggle />
-        </div>
       </div>
     </MainLayout>
   );
