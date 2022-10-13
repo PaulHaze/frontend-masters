@@ -34,6 +34,9 @@ module.exports = {
       center: true,
     },
     extend: {
+      colors: {
+        offwhite: 'rgb(250,250,250)',
+      },
       minWidth: {
         sm: '640px',
         md: '768px',

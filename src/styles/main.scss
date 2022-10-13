@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-offwhite;
+  }
   h1 {
     @apply text-4xl font-normal leading-normal;
   }
@@ -20,7 +23,8 @@
   }
 }
 
-@layer components {}
+@layer components {
+}
 
 @layer utilities {
   .bb {

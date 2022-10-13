@@ -8,9 +8,15 @@ type MetaProps = {
   title: string;
   description: string;
   canonical?: string;
+  faviconName?: string;
 };
 
-const Meta = ({ title, description, canonical }: MetaProps) => {
+const Meta = ({
+  title,
+  description,
+  canonical,
+  faviconName = 'favicon',
+}: MetaProps) => {
   const router = useRouter();
   return (
     <>
@@ -30,19 +36,19 @@ const Meta = ({ title, description, canonical }: MetaProps) => {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`${router.basePath}/favicon-32x32.png`}
+          href={`${router.basePath}/${faviconName}-32x32.png`}
           key="icon32"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`${router.basePath}/favicon-16x16.png`}
+          href={`${router.basePath}/${faviconName}-16x16.png`}
           key="icon16"
         />
         <link
           rel="icon"
-          href={`${router.basePath}/favicon.ico`}
+          href={`${router.basePath}/${faviconName}.ico`}
           key="favicon"
         />
       </Head>

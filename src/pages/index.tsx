@@ -6,20 +6,13 @@ const Home: NextPage = () => {
     <MainLayout
       meta={
         <Meta
-          title="Next.js Tailwind Enterprise Starter"
-          description="Starter template to make a great Next Js Project"
+          title="FrontEnd Masters Projects"
+          description="A home for all the challenges provided by FrontEnd Masters"
         />
       }
     >
-      <div className="h-[100vh] bg-gradient-to-br from-green-300/50 to-sky-800/50 flex items-center justify-center">
-        <div className="flex flex-col justify-center w-11/12 bg-white rounded-lg shadow-2xl p-md">
-          <h1 className="font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-indigo-400 to-violet-800">
-            Im your new Tailwind Project!
-          </h1>
-          <p className="text-[#504e63] text-center">
-            Delete this and make something great!
-          </p>
-        </div>
+      <div className="h-[100vh] flex justify-center">
+        <h5>Front End Masters Project</h5>
       </div>
     </MainLayout>
   );
