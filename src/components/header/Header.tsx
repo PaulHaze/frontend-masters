@@ -12,7 +12,7 @@ export type HeaderProps = {
 export function Header({ darkMode, toggleDarkMode }: HeaderProps) {
   const logoSrc = darkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
   return (
-    <div className="w-ful bg-white">
+    <div className="w-full bg-white dark:bg-gray-800">
       <div className={styles.headerWrapper}>
         <Link href="/">
           <div className="relative w-[195px] h-[55px]">
