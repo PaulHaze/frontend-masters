@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       }
     >
       <div className="h-[100vh] flex justify-center">
-        <h5>Front End Masters Project</h5>
+        <h1>FrontEnd Masters Project</h1>
       </div>
     </MainLayout>
   );

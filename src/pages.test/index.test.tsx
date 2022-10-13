@@ -10,15 +10,9 @@ describe('Home Page', () => {
     it('should have an h1 tag', () => {
       render(<Home />);
       const heading = screen.getByRole('heading', {
-        name: /Tailwind Project/,
+        name: /FrontEnd Masters Project/,
       });
       expect(heading).toBeInTheDocument();
-    });
-
-    it('should have an p tag', () => {
-      render(<Home />);
-      const paragraph = screen.getByText('Delete this', { exact: false });
-      expect(paragraph).toBeInTheDocument();
     });
   });
 });
