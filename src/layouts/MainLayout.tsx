@@ -13,7 +13,7 @@ export function MainLayout({ meta, children }: MainLayoutProps) {
 
   const toggleDarkMode = () => setDarkMode((prevMode) => !prevMode);
   return (
-    <div className={`w-full antialiased ${darkMode && 'dark'}`}>
+    <div className={`w-full antialiased transition-all ${darkMode && 'dark'}`}>
       {meta}
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <div>{children}</div>
