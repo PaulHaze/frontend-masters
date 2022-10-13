@@ -4,20 +4,33 @@ import Image from 'next/image';
 
 import styles from './Header.module.scss';
 
-export function Header() {
+export type HeaderProps = {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+};
+
+export function Header({ darkMode, toggleDarkMode }: HeaderProps) {
+  const logoSrc = darkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
   return (
-    <div className="w-full bg-white">
+    <div className="w-ful bg-white">
       <div className={styles.headerWrapper}>
         <Link href="/">
-          <Image
-            height={25}
-            width={175}
-            className="cursor-pointer"
-            src="/logo-desktop.svg"
-            alt="Frontend mentor logo"
-          />
+          <div className="relative w-[195px] h-[55px]">
+            <Image
+              layout="fill"
+              className="cursor-pointer"
+              src={logoSrc}
+              alt="Frontend mentor logo"
+            />
+          </div>
         </Link>
-        <p>switch</p>
+        <button
+          type="button"
+          className="px-2 py-2 bg-white"
+          onClick={toggleDarkMode}
+        >
+          SWITCH
+        </button>
       </div>
     </div>
   );
