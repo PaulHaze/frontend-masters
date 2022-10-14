@@ -10,7 +10,6 @@ export type Mode = 'dark' | 'light' | 'toggle';
 
 export type HeaderProps = {
   darkMode: boolean;
-
   setMode: (mode: Mode) => void;
 };
 
