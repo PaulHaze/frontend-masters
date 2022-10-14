@@ -9,8 +9,8 @@ export type ThemeProviderProps = {
 };
 
 export const ThemeContext = React.createContext({
-  isDarkMode: false,
-  toggleDarkMode: () => {},
+  darkMode: false,
+  setMode: () => {},
 });
 
 export function ThemeProvider({ children }: ThemeProviderProps) {

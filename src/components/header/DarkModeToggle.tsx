@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { ThemeContext } from '@/context/ThemeContext';
+
 import styles from './DarkModeToggle.module.scss';
 
 export type Mode = 'dark' | 'light' | 'toggle';
@@ -13,7 +15,8 @@ export type DarkModeToggleProps = {
   setMode: (mode: Mode) => void;
 };
 
-export function DarkModeToggle({ darkMode, setMode }: DarkModeToggleProps) {
+export function DarkModeToggle() {
+  const { darkMode, setMode } = React.useContext(ThemeContext);
   return (
     <div className={styles.toggle}>
       {

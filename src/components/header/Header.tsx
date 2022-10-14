@@ -10,10 +10,9 @@ export type Mode = 'dark' | 'light' | 'toggle';
 
 export type HeaderProps = {
   darkMode: boolean;
-  setMode: (mode: Mode) => void;
 };
 
-export function Header({ darkMode, setMode }: HeaderProps) {
+export function Header({ darkMode }: HeaderProps) {
   const logoSrc = darkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
   return (
     <div className="w-full">
@@ -28,14 +27,7 @@ export function Header({ darkMode, setMode }: HeaderProps) {
             />
           </div>
         </Link>
-        <DarkModeToggle setMode={setMode} darkMode={darkMode} />
-        {/* <button
-          type="button"
-          className="px-2 py-2 bg-white dark:bg-gray-500 dark:text-offwhite transition-colors duration-1000"
-          onClick={toggleDarkMode}
-        >
-          SWITCH
-        </button> */}
+        <DarkModeToggle darkMode={darkMode} />
       </div>
     </div>
   );
