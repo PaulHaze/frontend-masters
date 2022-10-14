@@ -15,9 +15,17 @@ export type DarkModeToggleProps = {
 
 export function DarkModeToggle({ darkMode, setMode }: DarkModeToggleProps) {
   return (
-    <div className="flex-center">
+    <div className={styles.toggle}>
       {
-        <span onClick={() => setMode('dark')} aria-hidden="true">
+        <span
+          className={
+            darkMode
+              ? 'text-offwhite cursor-default'
+              : 'text-gray-500 cursor-pointer hover:text-gray-900'
+          }
+          onClick={() => setMode('dark')}
+          aria-hidden="true"
+        >
           Dark
         </span>
       }
@@ -30,7 +38,15 @@ export function DarkModeToggle({ darkMode, setMode }: DarkModeToggleProps) {
         onChange={() => setMode('toggle')}
       />
       {
-        <span onClick={() => setMode('light')} aria-hidden="true">
+        <span
+          className={
+            darkMode
+              ? 'text-gray-500 hover:text-gray-100 cursor-pointer'
+              : 'text-gray-900 cursor-default'
+          }
+          onClick={() => setMode('light')}
+          aria-hidden="true"
+        >
           Light
         </span>
       }
