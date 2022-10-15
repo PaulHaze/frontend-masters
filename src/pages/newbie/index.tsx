@@ -16,13 +16,14 @@ const Newbie: NextPage = () => {
       <div className="min-h-[100vh]  pt-10">
         <div className="flex max-w-lg mx-auto justify-center flex-wrap gap-2">
           <Link href="newbie/product-card">
-            <div className="w-52 overflow-hidden cursor-pointer rounded shadow inline-flex">
-              <div className="hover:scale-[1.1] transition-all duration-700">
-                <Image
-                  src={darkMode ? CardThumbDark : CardThumbLight}
-                  alt="Thumbnail link to Review Card Component"
-                />
-              </div>
+            <div className="overflow-hidden cursor-pointer rounded shadow relative">
+              <Image
+                src={darkMode ? CardThumbDark : CardThumbLight}
+                alt="Thumbnail link to Review Card Component"
+                className="w-40 sm:w-52 lg:w-58 hover:scale-[1.1] transition-all duration-700 relative object-contain"
+                quality={100}
+                placeholder="blur"
+              />
             </div>
           </Link>
         </div>
