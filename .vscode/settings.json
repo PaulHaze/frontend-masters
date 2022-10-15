@@ -43,5 +43,6 @@
   "[json][jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true
 }
