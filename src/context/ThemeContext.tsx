@@ -13,6 +13,11 @@ export const ThemeContext = React.createContext({
   setMode: () => {},
 });
 
+export const useThemeContext = () => {
+  const { darkMode, setMode } = React.useContext(ThemeContext);
+  return { darkMode, setMode };
+};
+
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [darkMode, setMode] = useDarkMode();
   return (

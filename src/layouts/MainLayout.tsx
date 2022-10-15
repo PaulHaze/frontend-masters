@@ -5,7 +5,7 @@ import { Meta } from '@Layouts';
 
 import { Header } from '@Components';
 
-import { ThemeContext } from '@/context/ThemeContext';
+import { useThemeContext } from '@/context/ThemeContext';
 
 type MainLayoutProps = {
   meta: ReactNode;
@@ -13,7 +13,7 @@ type MainLayoutProps = {
 };
 
 export function MainLayout({ children }: MainLayoutProps) {
-  const { darkMode } = React.useContext(ThemeContext);
+  const { darkMode } = useThemeContext();
   return (
     <div className={`w-full antialiased ${darkMode ? 'dark' : ''}`}>
       <Meta
