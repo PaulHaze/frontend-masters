@@ -1,9 +1,12 @@
 import * as React from 'react';
 
+export type Mode = 'dark' | 'light' | 'toggle';
+
 export function useDarkMode() {
   const [darkMode, setDarkMode] = React.useState(false);
 
-  const setMode = (mode: string) => {
+  const setMode = (mode: Mode) => {
+    1;
     switch (mode) {
       case 'dark':
         setDarkMode(true);
@@ -15,6 +18,7 @@ export function useDarkMode() {
         setDarkMode((prevMode) => !prevMode);
         break;
       default:
+        throw new Error('incorrect arugment passed to setMode');
         break;
     }
   };
