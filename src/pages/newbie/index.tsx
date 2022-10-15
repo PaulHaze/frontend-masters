@@ -1,6 +1,6 @@
 import { MainLayout } from '@Layouts';
 
-import type { NextPage } from '@/types/page';
+import type { NextPage } from 'next';
 
 const Newbie: NextPage = () => {
   return (

@@ -8,7 +8,6 @@ import { Header } from '@Components';
 import { useThemeContext } from '@/context/ThemeContext';
 
 type MainLayoutProps = {
-  meta: ReactNode;
   children: ReactNode;
 };
 
