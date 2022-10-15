@@ -6,7 +6,6 @@ export function useDarkMode() {
   const [darkMode, setDarkMode] = React.useState(false);
 
   const setMode = (mode: Mode) => {
-    1;
     switch (mode) {
       case 'dark':
         setDarkMode(true);
@@ -19,7 +18,6 @@ export function useDarkMode() {
         break;
       default:
         throw new Error('incorrect arugment passed to setMode');
-        break;
     }
   };
 

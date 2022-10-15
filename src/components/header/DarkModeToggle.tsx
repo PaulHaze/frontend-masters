@@ -6,14 +6,13 @@ import styles from './DarkModeToggle.module.scss';
 
 export type Mode = 'dark' | 'light' | 'toggle';
 
-export type DarkModeToggleProps = {
-  mode?: Mode;
-  dark?: string;
-  light?: string;
-  darkMode: boolean;
-
-  setMode: (mode: Mode) => void;
-};
+// export type DarkModeToggleProps = {
+//   mode?: Mode;
+//   dark?: string;
+//   light?: string;
+//   darkMode: boolean;
+//   setMode: (mode: Mode) => void;
+// };
 
 export function DarkModeToggle() {
   const { darkMode, setMode } = useThemeContext();
