@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-pn run lint
+pnpm run lint
 # pnpm run test add this back in towards the end
 # npm run build - add this back in when seriously developing
 
