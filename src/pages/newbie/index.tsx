@@ -1,22 +1,28 @@
 import { MainLayout } from '@Layouts';
 
 import type { NextPage } from 'next';
+import Image from 'next/future/image';
 import Link from 'next/link';
 
 import { useThemeContext } from '@/context/ThemeContext';
 
-import CardThumbLight from '@/assets/img/review-card/reivew-card-light.jpg';
-import CardThumbDark from '@/assets/img/review-card/reivew-card-dark.jpg';
+import CardThumbLight from '@/assets/img/review-card/review-card-light.jpg';
+import CardThumbDark from '@/assets/img/review-card/review-card-dark.jpg';
 
 const Newbie: NextPage = () => {
   const { darkMode } = useThemeContext();
   return (
     <MainLayout>
-      <div className="h-[100vh] flex flex-col items-center dark:text-offwhite">
-        <h1>Newbie Projects</h1>
+      <div className="flex max-w-lg mx-auto justify-center flex-wrap gap-2 min-h-[100vh] pt-10">
         <Link href="newbie/product-card">
-          <div className="w-40 flex-center text-gray-900 aspect-[3/5] bg-gray-400 dark:bg-gray-50 dark:textgray-900">
-            Card
+          <div className=" w-48 bb overflow-hidden cursor-pointer">
+            <div className=" hover:scale-[1.2] transition-all duration-500">
+              <Image
+                src={darkMode ? CardThumbDark : CardThumbLight}
+                alt="Thumbnail link to Review Card Component"
+                layout="fill"
+              />
+            </div>
           </div>
         </Link>
       </div>
