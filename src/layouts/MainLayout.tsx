@@ -2,10 +2,8 @@ import * as React from 'react';
 import type { ReactNode } from 'react';
 
 import { Header } from '@Components';
-
-import { Meta } from './Meta';
-
 import { useThemeContext } from '@/context/ThemeContext';
+import { Meta } from './Meta';
 
 type MainLayoutProps = {
   children: ReactNode;
