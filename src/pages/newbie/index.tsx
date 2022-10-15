@@ -20,7 +20,7 @@ const Newbie: NextPage = () => {
               <Image
                 src={darkMode ? CardThumbDark : CardThumbLight}
                 alt="Thumbnail link to Review Card Component"
-                className="w-40 sm:w-52 lg:w-58 hover:scale-[1.1] transition-all duration-700 relative object-contain"
+                className="h-[20rem] w-auto hover:scale-[1.1] transition-all duration-700 relative object-contain"
                 quality={100}
                 placeholder="blur"
               />
