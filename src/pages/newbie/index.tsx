@@ -21,7 +21,7 @@ const Newbie: NextPage = () => {
                 <Image
                   src={darkMode ? CardThumbDark : CardThumbLight}
                   alt="Thumbnail link to Review Card Component"
-                  layout="fill"
+                  // layout="fill"
                 />
               </div>
             </div>
