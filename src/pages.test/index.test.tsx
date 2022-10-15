@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
+import '@testing-library/jest-dom';
+
 import Home from '@/pages/index';
 
 // The easiest solution to mock `next/router`: https://github.com/vercel/next.js/issues/7479

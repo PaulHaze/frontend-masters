@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         />
       }
     >
-      <div className="h-[100vh] flex justify-center">
+      <div className="h-[100vh] flex flex-col items-center dark:text-offwhite">
         <h1>FrontEnd Masters Project</h1>
       </div>
     </MainLayout>
