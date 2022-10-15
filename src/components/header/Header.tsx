@@ -27,7 +27,7 @@ export function Header({ darkMode }: HeaderProps) {
             />
           </div>
         </Link>
-        <DarkModeToggle darkMode={darkMode} />
+        <DarkModeToggle />
       </div>
     </div>
   );

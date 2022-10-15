@@ -1,22 +1,21 @@
 import * as React from 'react';
 
-import { ThemeContext } from '@/context/ThemeContext';
+import { useThemeContext } from '@/context/ThemeContext';
 
 import styles from './DarkModeToggle.module.scss';
 
 export type Mode = 'dark' | 'light' | 'toggle';
 
-export type DarkModeToggleProps = {
-  mode?: Mode;
-  dark?: string;
-  light?: string;
-  darkMode: boolean;
-
-  setMode: (mode: Mode) => void;
-};
+// export type DarkModeToggleProps = {
+//   mode?: Mode;
+//   dark?: string;
+//   light?: string;
+//   darkMode: boolean;
+//   setMode: (mode: Mode) => void;
+// };
 
 export function DarkModeToggle() {
-  const { darkMode, setMode } = React.useContext(ThemeContext);
+  const { darkMode, setMode } = useThemeContext();
   return (
     <div className={styles.toggle}>
       {

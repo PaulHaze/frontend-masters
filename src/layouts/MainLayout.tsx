@@ -3,18 +3,22 @@ import type { ReactNode } from 'react';
 
 import { Header } from '@Components';
 
-import { ThemeContext } from '@/context/ThemeContext';
+import { Meta } from './Meta';
+
+import { useThemeContext } from '@/context/ThemeContext';
 
 type MainLayoutProps = {
-  meta: ReactNode;
   children: ReactNode;
 };
 
-export function MainLayout({ meta, children }: MainLayoutProps) {
-  const { darkMode } = React.useContext(ThemeContext);
+export function MainLayout({ children }: MainLayoutProps) {
+  const { darkMode } = useThemeContext();
   return (
     <div className={`w-full antialiased ${darkMode ? 'dark' : ''}`}>
-      {meta}
+      <Meta
+        title="FrontEnd Masters Projects"
+        description="A home for all the challenges provided by FrontEnd Masters"
+      />
       <div className="bg-white w-full dark:bg-slate-800 dark:text-offwhite ">
         <Header darkMode={darkMode} />
         <div>{children}</div>
