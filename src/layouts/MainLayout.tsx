@@ -1,9 +1,9 @@
 import * as React from 'react';
 import type { ReactNode } from 'react';
 
-import { Meta } from '@Layouts';
-
 import { Header } from '@Components';
+
+import { Meta } from './Meta';
 
 import { useThemeContext } from '@/context/ThemeContext';
 
