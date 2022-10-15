@@ -21,5 +21,5 @@ export function useDarkMode() {
     }
   };
 
-  return [darkMode, setMode];
+  return { darkMode, setMode };
 }
