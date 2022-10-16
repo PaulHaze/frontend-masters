@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,6 +34,12 @@
 }
 
 @layer components {
+  .card-text {
+    font-family: 'Montserrat';
+  }
+  .card-title: {
+    font-family: 'Fraunces';
+  }
 }
 
 @layer utilities {
