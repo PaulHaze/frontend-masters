@@ -22,6 +22,13 @@ $strikeThrough-Dark: #41464b;
 $priceText-Dark: #9cd3be;
 $btnBg-Dark: #129062;
 
+.cardContainer {
+  @apply w-full min-h-screen bg-[#f2ebe3] flex-center px-6;
+}
+:global(.dark) .cardContainer {
+  @apply bg-[#6c7289];
+}
+
 .cardTitle {
   color: $headerText-Light;
   font-family: 'Fraunces';
