@@ -5,7 +5,7 @@ import { useTheme } from '@/hooks';
 import styles from './DarkModeToggle.module.scss';
 
 export function DarkModeToggle() {
-  const { theme, setTheme, isDarkMode } = useTheme();
+  const { setTheme, isDarkMode } = useTheme();
 
   return (
     <div className={styles.toggle}>
@@ -26,7 +26,7 @@ export function DarkModeToggle() {
       <input
         type="checkbox"
         role="switch"
-        checked={theme === 'light'}
+        checked={!isDarkMode}
         aria-label="dark light theme switch"
         onChange={() => setTheme(isDarkMode ? 'light' : 'dark')}
       />
