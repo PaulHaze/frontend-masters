@@ -2,6 +2,7 @@ import * as React from 'react';
 import type { ReactNode } from 'react';
 
 import { Header } from '@Components';
+import { useTheme } from 'next-themes';
 import { useThemeContext } from '@/context/ThemeContext';
 import { Meta } from './Meta';
 
@@ -11,6 +12,8 @@ type MainLayoutProps = {
 
 export function MainLayout({ children }: MainLayoutProps) {
   const { darkMode } = useThemeContext();
+  const { theme } = useTheme();
+  console.log(theme);
   return (
     <div className={`w-full antialiased ${darkMode ? 'dark' : ''}`}>
       <Meta
