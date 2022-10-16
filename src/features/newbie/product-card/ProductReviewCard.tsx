@@ -7,7 +7,7 @@ import styles from './Card.module.scss';
 export function ProductReviewCard() {
   return (
     <div className="w-full min-h-screen bg-[#f2ebe3] flex-center px-6">
-      <div className="w-full h-[610px] bb rounded-[9px] overflow-hidden">
+      <div className="w-full h-[610px] shadow rounded-[9px] overflow-hidden bg-white">
         <div className="image-container relative w-full h-[240px] bg-slate-600 rounded-[9px]">
           IMAGE
         </div>
