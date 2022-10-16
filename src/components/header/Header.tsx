@@ -2,18 +2,15 @@ import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { useTheme } from '@/hooks';
+
 import { DarkModeToggle } from './DarkModeToggle';
 
 import styles from './Header.module.scss';
 
-export type Mode = 'dark' | 'light' | 'toggle';
-
-export type HeaderProps = {
-  darkMode: boolean;
-};
-
-export function Header({ darkMode }: HeaderProps) {
-  const logoSrc = darkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
+export function Header() {
+  const { isDarkMode } = useTheme();
+  const logoSrc = isDarkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
   return (
     <div className="w-full">
       <div className={styles.headerWrapper}>

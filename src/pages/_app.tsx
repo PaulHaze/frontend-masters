@@ -1,12 +1,12 @@
 import type { AppProps } from 'next/app';
 
-import { ThemeProvider } from '@/context/ThemeContext';
+import { ThemeProvider } from 'next-themes';
 
 import '@/styles/main.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider enableSystem={false} defaultTheme="light" attribute="class">
       <Component {...pageProps} />
     </ThemeProvider>
   );

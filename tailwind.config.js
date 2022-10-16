@@ -37,6 +37,14 @@ module.exports = {
     extend: {
       colors: {
         offwhite: 'rgb(250,250,250)',
+        primaryBg: {
+          dark: '#1E293B',
+          light: '#CBD5E1',
+        },
+        primaryText: {
+          dark: '#CBD5E1',
+          light: '#1E293B',
+        },
       },
       minWidth: {
         sm: '640px',
