@@ -1,19 +1,20 @@
 $TOGGLE_DURATION: 250ms;
 
-$inactiveLabelColor: #b9bdc1;
-$inactiveLabelColorOnHover: #fcfefe;
-$inactiveLabelColorOnActive: #cdd1d5;
-$activeLabelColor: #5b5e62;
-$activeLabelColorOnHover: #404346;
-$activeLabelColorOnActive: #010101;
-$inactiveTrackColor: #dce0e3;
-$inactiveTrackColorOnHover: #fcfefe;
-$inactiveTrackColorOnActive: #dee4ea;
-$activeTrackColor: #404346;
-$activeTrackColorOnHover: #2d2f31;
-$activeTrackColorOnActive: #141516;
-$inactiveThumbColor: #20293a;
-$activeThumbColor: #fefefe;
+// color behind the toggle when DARK
+$inactiveTrackColor: #f1f1f1;
+$inactiveTrackColorOnHover: #dee8ed;
+$inactiveTrackColorOnActive: #c9d1da;
+
+// color behind the toggle when LIGHT
+$activeTrackColor: #64748b;
+$activeTrackColorOnHover: #334155;
+$activeTrackColorOnActive: #0f172a;
+
+// color of moon icon
+$inactiveThumbColor: #1e293b;
+
+// bg color of toggle switch when LIGHT
+$activeThumbColor: #f1f1f1;
 $focusRingColor: rgb(59 130 246 / 0.5);
 
 .toggle {
