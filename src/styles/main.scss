@@ -7,8 +7,9 @@
     @apply transition-colors duration-500;
   }
   body {
-    @apply bg-offwhite;
+    @apply bg-offwhite dark:bg-slate-800;
   }
+
   h1 {
     @apply text-4xl font-normal leading-normal;
   }
