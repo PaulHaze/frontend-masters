@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app';
 
 import { ThemeProvider } from 'next-themes';
-// import { ThemeProvider } from '@/context/ThemeContext';
 
 import '@/styles/main.scss';
 

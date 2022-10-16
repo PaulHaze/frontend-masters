@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Home: NextPage = () => {
   return (
     <MainLayout>
-      <div className="h-[100vh] flex flex-col items-center dark:text-offwhite">
+      <div className="h-[100vh] flex flex-col items-center">
         <Link href="/newbie">
           <a className="w-40 aspect-[3/5] rounded flex-center bg-slate-200 dark:bg-slate-600">
             Newbie Thumbnail
