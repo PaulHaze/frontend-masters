@@ -21,3 +21,9 @@ $bodyText-Dark: #b2afac;
 $strikeThrough-Dark: #41464b;
 $priceText-Dark: #9cd3be;
 $btnBg-Dark: #129062;
+
+.cardTitle {
+  color: $headerText-Light;
+  font-family: 'Fraunces';
+  font-weight: bold;
+}

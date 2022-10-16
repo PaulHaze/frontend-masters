@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import styles from './Card.module.scss';
+
 // import Image from 'next/future/image';
 
 export function ProductReviewCard() {
@@ -9,7 +11,7 @@ export function ProductReviewCard() {
         <div className="image-container relative w-full h-[240px] bg-slate-600 rounded-[9px]">
           IMAGE
         </div>
-        <p>ProductReviewCard</p>
+        <h4 className={styles.cardTitle}>ProductReviewCard</h4>
       </div>
     </div>
   );
