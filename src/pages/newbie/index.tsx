@@ -4,13 +4,14 @@ import type { NextPage } from 'next';
 import Image from 'next/future/image';
 import Link from 'next/link';
 
-import { useThemeContext } from '@/context/ThemeContext';
+import { useTheme } from '@/hooks';
 
 import CardThumbLight from '@/assets/img/review-card/review-card-light.png';
 import CardThumbDark from '@/assets/img/review-card/review-card-dark.png';
 
 const Newbie: NextPage = () => {
-  const { darkMode } = useThemeContext();
+  const { isDarkMode } = useTheme();
+
   return (
     <MainLayout>
       <div className="min-h-[100vh]  pt-10">
@@ -18,7 +19,7 @@ const Newbie: NextPage = () => {
           <Link href="newbie/product-card">
             <div className="overflow-hidden cursor-pointer rounded shadow relative">
               <Image
-                src={darkMode ? CardThumbDark : CardThumbLight}
+                src={isDarkMode ? CardThumbDark : CardThumbLight}
                 alt="Thumbnail link to Review Card Component"
                 className="h-[20rem] w-auto hover:scale-[1.1] transition-all duration-700"
                 quality={100}
