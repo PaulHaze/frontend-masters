@@ -2,22 +2,15 @@ import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { useTheme } from 'next-themes';
+import { useTheme } from '@/hooks';
 
 import { DarkModeToggle } from './DarkModeToggle';
 
 import styles from './Header.module.scss';
 
-// export type Mode = 'dark' | 'light' | 'toggle';
-
-// export type HeaderProps = {
-//   darkMode: boolean;
-// };
-
 export function Header() {
-  const { theme } = useTheme();
-  const logoSrc =
-    theme === 'dark' ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
+  const { isDarkMode } = useTheme();
+  const logoSrc = isDarkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
   return (
     <div className="w-full">
       <div className={styles.headerWrapper}>
