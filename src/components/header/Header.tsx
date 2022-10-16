@@ -15,7 +15,7 @@ export function Header() {
     <div className="w-full">
       <div className={styles.headerWrapper}>
         <Link href="/">
-          <div className="relative w-[195px] h-[55px]">
+          <div className="relative mt-1 w-[150px] sm:w-[195px] sm:h-[55px]">
             <Image
               layout="fill"
               className="cursor-pointer"

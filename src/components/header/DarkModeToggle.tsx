@@ -12,7 +12,7 @@ export function DarkModeToggle() {
       {
         <span
           className={
-            theme === 'dark'
+            isDarkMode
               ? 'text-offwhite cursor-default'
               : 'text-gray-500 cursor-pointer hover:text-gray-900'
           }
@@ -33,7 +33,7 @@ export function DarkModeToggle() {
       {
         <span
           className={
-            theme === 'dark'
+            isDarkMode
               ? 'text-gray-500 hover:text-gray-100 cursor-pointer'
               : 'text-gray-900 cursor-default'
           }

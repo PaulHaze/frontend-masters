@@ -22,8 +22,8 @@ $focusRingColor: rgb(59 130 246 / 0.5);
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   span {
+    @apply p-2;
     transition: color $TOGGLE_DURATION ease-in-out;
-    padding: 1rem;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
