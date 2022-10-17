@@ -1,18 +1,30 @@
 import * as React from 'react';
-
+import Image from 'next/future/image';
 import styles from './Card.module.scss';
 
-// import Image from 'next/future/image';
-
-// import CartBtnIcon from './assets/CartBtnIcon.svg';
+import CardImgDesktop from './assets/image-product-desktop.jpg';
+import CardImgMobile from './assets/image-product-mobile.jpg';
 
 export function ProductReviewCard() {
   return (
     <div className={styles.container}>
       <div className={styles.cardContainer}>
-        <div className={styles.imageContainer}>IMAGE</div>
+        {/* IMAGE COMPONENT */}
+        <div className={styles.imageContainer}>
+          <Image
+            src={CardImgMobile}
+            alt="Image of Chanel perfume"
+            className="overflow-hidden md:hidden"
+          />
+          <Image
+            src={CardImgDesktop}
+            alt="Image of Chanel perfume"
+            className="hidden md:block object-cover"
+            fill
+          />
+        </div>
         {/* CARD TEXT CONTENT */}
-        <div className="mx-6">
+        <div className={styles.cardContentContainer}>
           <div className={styles.cardCategory}>
             <p>PERFUME</p>
           </div>

@@ -31,12 +31,22 @@ $btnBg-Dark: #129062;
 }
 
 .cardContainer {
-  @apply w-[360px] md:w-full h-[610px] shadow rounded-[9px] overflow-hidden bg-white;
+  @apply w-[360px] h-[610px] rounded-[9px] shadow overflow-hidden bg-white;
+  @screen md {
+    @apply w-[750px] h-[548px] flex;
+  }
   font-family: 'Montserrat';
 }
 
 .imageContainer {
-  @apply relative w-full h-[240px] bg-slate-600 rounded-[9px];
+  @apply relative w-full h-[240px] rounded-t-[9px] overflow-hidden object-cover;
+  @screen md {
+    @apply bb h-[560px] rounded-l-[9px] rounded-r-[0px];
+  }
+}
+
+.cardContentContainer {
+  @apply mx-6 w-[91%];
 }
 
 .cardCategory {
