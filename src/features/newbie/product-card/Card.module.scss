@@ -44,6 +44,7 @@ $btnBg-Dark: #129062;
   p {
     font-family: 'Montserrat';
     color: $catText-Light;
+    font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.45em;
     line-height: 15px;
@@ -69,6 +70,8 @@ $btnBg-Dark: #129062;
     font-size: 14px;
     letter-spacing: 0.012em;
     line-height: 161%;
+    font-weight: 500;
+    opacity: 0.9;
   }
 }
 
@@ -83,9 +86,12 @@ $btnBg-Dark: #129062;
   p {
     @apply ml-5 mt-1;
     font-weight: 600;
+    font-size: 0.8rem;
     opacity: 0.7;
     color: $strikeThrough-Light;
     text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(0, 0, 0, 0.3);
   }
 }
 
