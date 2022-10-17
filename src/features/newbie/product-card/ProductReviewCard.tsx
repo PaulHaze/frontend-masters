@@ -6,12 +6,33 @@ import styles from './Card.module.scss';
 
 export function ProductReviewCard() {
   return (
-    <div className={styles.cardContainer}>
-      <div className="w-full h-[610px] shadow rounded-[9px] overflow-hidden bg-white">
-        <div className="image-container relative w-full h-[240px] bg-slate-600 rounded-[9px]">
-          IMAGE
+    <div className={styles.container}>
+      <div className={styles.cardContainer}>
+        <div className={styles.imageContainer}>IMAGE</div>
+        {/* CARD TEXT CONTENT */}
+        <div className="mx-6">
+          <div className={styles.cardCategory}>
+            <p>PERFUME</p>
+          </div>
+          <div className={styles.cardTitle}>
+            <h4>Gabrielle Essence Eau De Parfum</h4>
+          </div>
+          <div className={styles.cardBody}>
+            <p>
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div className={styles.price}>
+            <h5>$149.99</h5>
+            <p>$169.99</p>
+          </div>
+
+          <button className={styles.cartButton} type="button">
+            <div className="">i</div>
+            <h5> Add to cart</h5>
+          </button>
         </div>
-        <h4 className={styles.cardTitle}>ProductReviewCard</h4>
       </div>
     </div>
   );

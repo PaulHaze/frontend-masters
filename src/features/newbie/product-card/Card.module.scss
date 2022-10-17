@@ -22,15 +22,85 @@ $strikeThrough-Dark: #41464b;
 $priceText-Dark: #9cd3be;
 $btnBg-Dark: #129062;
 
-.cardContainer {
+.container {
   @apply w-full min-h-screen bg-[#f2ebe3] flex-center px-6;
 }
-:global(.dark) .cardContainer {
+
+:global(.dark) .container {
   @apply bg-[#6c7289];
 }
 
+.cardContainer {
+  @apply w-[360px] md:w-full h-[610px] shadow rounded-[9px] overflow-hidden bg-white;
+  font-family: 'Montserrat';
+}
+
+.imageContainer {
+  @apply relative w-full h-[240px] bg-slate-600 rounded-[9px];
+}
+
+.cardCategory {
+  @apply mt-6 mb-3;
+  p {
+    font-family: 'Montserrat';
+    color: $catText-Light;
+    font-size: 12px;
+    letter-spacing: 0.45em;
+    line-height: 15px;
+  }
+}
+
 .cardTitle {
-  color: $headerText-Light;
-  font-family: 'Fraunces', serif;
-  font-weight: bold;
+  @apply mb-3;
+  h4 {
+    color: $headerText-Light;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: $headerText-Light;
+    line-height: 101%;
+  }
+}
+
+.cardBody {
+  p {
+    font-family: 'Montserrat';
+    color: $bodyText-Light;
+    font-size: 14px;
+    letter-spacing: 0.012em;
+    line-height: 161%;
+  }
+}
+
+.price {
+  @apply flex mt-5 mb-3 items-center;
+  h5 {
+    color: $priceText-Light;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  p {
+    @apply ml-5 mt-1;
+    color: $strikeThrough-Light;
+    text-decoration: line-through;
+  }
+}
+
+.cartButton {
+  @apply mt-4 w-full rounded-lg flex-center py-3 text-white gap-2 duration-150;
+
+  background-color: $btnBg-Light;
+  &:hover {
+    background-color: #2a604c;
+  }
+  &:active {
+    background-color: #1a3e31;
+  }
+
+  h5 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1rem;
+  }
 }
