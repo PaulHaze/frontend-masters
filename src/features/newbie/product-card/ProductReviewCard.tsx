@@ -24,7 +24,7 @@ export function ProductReviewCard() {
           />
         </div>
         {/* CARD TEXT CONTENT */}
-        <div className={styles.cardContentContainer}>
+        <div className={styles.contentContainer}>
           <div className={styles.cardCategory}>
             <p>PERFUME</p>
           </div>

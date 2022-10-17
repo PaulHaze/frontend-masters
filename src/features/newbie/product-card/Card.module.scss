@@ -33,7 +33,7 @@ $btnBg-Dark: #129062;
 .cardContainer {
   @apply w-[360px] h-[610px] rounded-[9px] shadow overflow-hidden bg-white;
   @screen md {
-    @apply w-[750px] h-[548px] flex;
+    @apply w-[700px] h-[552px] flex;
   }
   font-family: 'Montserrat';
 }
@@ -41,12 +41,15 @@ $btnBg-Dark: #129062;
 .imageContainer {
   @apply relative w-full h-[240px] rounded-t-[9px] overflow-hidden object-cover;
   @screen md {
-    @apply bb h-[560px] rounded-l-[9px] rounded-r-[0px];
+    @apply h-[552px] rounded-l-[9px] rounded-r-[0px] flex-1;
   }
 }
 
-.cardContentContainer {
-  @apply mx-6 w-[91%];
+.contentContainer {
+  @apply mx-6;
+  @screen md {
+    @apply mx-0 flex-1 bb;
+  }
 }
 
 .cardCategory {
