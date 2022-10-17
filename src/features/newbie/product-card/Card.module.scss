@@ -8,7 +8,7 @@ $cardBg-Light: #ffffff;
 $headerText-Light: #1c232b;
 $catText-Light: #b5b8c4;
 $bodyText-Light: #6c7289;
-$strikeThrough-Light: #dadcd1;
+$strikeThrough-Light: #787884;
 $priceText-Light: #3c8067;
 $btnBg-Light: #3c8067;
 
@@ -82,6 +82,8 @@ $btnBg-Dark: #129062;
   }
   p {
     @apply ml-5 mt-1;
+    font-weight: 600;
+    opacity: 0.7;
     color: $strikeThrough-Light;
     text-decoration: line-through;
   }
@@ -100,7 +102,7 @@ $btnBg-Dark: #129062;
 
   h5 {
     font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: 800;
+    font-size: 0.9rem;
   }
 }

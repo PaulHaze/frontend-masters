@@ -4,6 +4,8 @@ import styles from './Card.module.scss';
 
 // import Image from 'next/future/image';
 
+// import CartBtnIcon from './assets/CartBtnIcon.svg';
+
 export function ProductReviewCard() {
   return (
     <div className={styles.container}>
@@ -29,8 +31,11 @@ export function ProductReviewCard() {
           </div>
 
           <button className={styles.cartButton} type="button">
-            <div className="">i</div>
-            <h5> Add to cart</h5>
+            <img
+              src="/icons/review-card/CartBtnIcon.svg"
+              alt="Shopping Cart Icon"
+            />
+            <h5> Add to Cart</h5>
           </button>
         </div>
       </div>
