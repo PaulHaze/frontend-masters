@@ -6,13 +6,13 @@ import CardImgMobile from './assets/image-product-mobile.jpg';
 
 export function ReviewCardMobile() {
   return (
-    <div className="rounded-[9px] shadow overflow-hidden bg-white max-w-[360px] h-[610px] dark:bg-[#1c232b]">
+    <div className="rounded-[9px] shadow max-w-[360px] h-[610px] bg-white dark:bg-[#1c232b]">
       {/* IMAGE COMPONENT */}
-      <div className="relative w-full h-[240px] rounded-t-[9px] overflow-hidden object-cover">
+      <div className="relative w-full h-[240px] rounded-t-[9px] overflow-hidden">
         <Image
           src={CardImgMobile}
           alt="Image of Chanel perfume"
-          className="block overflow-hidden"
+          className="block overflow-hidden object-cover"
           fill
         />
       </div>
@@ -31,10 +31,10 @@ export function ReviewCardMobile() {
           </p>
         </div>
         <div className="flex items-center">
-          <h5 className="mt-5 mb-3 text-[#3c8067] font-fraunces font-bold text-[36px] dark:text-[#9cd3be] ">
+          <h5 className="mt-5 mb-3 items-center text-[#3c8067] font-fraunces font-bold text-[32px] dark:text-[#9cd3be]">
             $149.99
           </h5>
-          <p className="ml-5 mt-3 font-semibold opacity-[0.7] text-[#787884] text-[0.9rem] strike-through-2 dark:text-[#7f93a8]">
+          <p className="ml-5 mt-1 font-semibold opacity-[0.7] text-[#787884] text-sm strike-through-2 dark:text-[#7f93a8]">
             $169.99
           </p>
         </div>
