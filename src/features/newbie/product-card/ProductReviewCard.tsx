@@ -10,24 +10,34 @@ import CardImgMobile from './assets/image-product-mobile.jpg';
 
 export function ProductReviewCard() {
   const viewSetting = useResponsiveStore((state) => state.viewSetting);
+  // const isMobile = viewSetting === 'mobile';
+  // const isDesktop = viewSetting === 'desktop';
 
-  console.log(viewSetting);
+  const showSmallImage =
+    viewSetting === 'mobile' || viewSetting === 'responsive';
+  const showLargeImage =
+    viewSetting === 'responsive' || viewSetting === 'desktop';
+
   return (
     <div className={styles.container}>
-      <div className={styles.cardContainer}>
+      <div className={`${styles.cardDesktop}`}>
         {/* IMAGE COMPONENT */}
-        <div className={styles.imageContainer}>
-          <Image
-            src={CardImgMobile}
-            alt="Image of Chanel perfume"
-            className="overflow-hidden md:hidden"
-          />
-          <Image
-            src={CardImgDesktop}
-            alt="Image of Chanel perfume"
-            className="hidden md:block object-cover"
-            fill
-          />
+        <div className={styles.imageDesktop}>
+          {showSmallImage && (
+            <Image
+              src={CardImgMobile}
+              alt="Image of Chanel perfume"
+              className="overflow-hidden md:hidden"
+            />
+          )}
+          {showLargeImage && (
+            <Image
+              src={CardImgDesktop}
+              alt="Image of Chanel perfume"
+              className={'block object-cover ${}'}
+              fill
+            />
+          )}
         </div>
         {/* CARD TEXT CONTENT */}
         <div className={styles.contentContainer}>

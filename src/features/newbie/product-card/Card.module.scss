@@ -25,12 +25,11 @@ $btnBg-Dark: #129062;
 $screen-md: 768px;
 
 /*------------------------------------*\
-  #CSS
+  #CSS - RESPONSIVE
 \*------------------------------------*/
 
 .container {
   @apply w-full min-h-screen bg-[#f2ebe3] flex items-center justify-center px-6;
-
   /*   
   *PURE CSS*
   width: 100%;
@@ -40,15 +39,14 @@ $screen-md: 768px;
   justify-content: center;
   align-items: center;
   padding: 0 1.5rem; 
-  */
+*/
 }
 :global(.dark) .container {
   @apply bg-[#6c7289];
-
   /* 
   *PURE CSS*
   background-color: $mainBg-Dark;
-  */
+*/
 }
 
 .cardContainer {
@@ -74,7 +72,9 @@ $screen-md: 768px;
   } 
   */
 }
-:global(.dark) .cardContainer {
+
+:global(.dark) .cardContainer,
+:global(.dark) .cardDesktop {
   @apply bg-[#1c232b];
   /* 
   *PURE CSS*
@@ -316,4 +316,16 @@ $screen-md: 768px;
       // background-color: #0e5d3f;
     }
   }
+}
+
+/*------------------------------------*\
+  #CSS - DESKTOP
+\*------------------------------------*/
+
+.cardDesktop {
+  @apply rounded-[9px] shadow overflow-hidden bg-white min-w-[700px] max-w-[700px] h-[522px] flex;
+}
+
+.imageDesktop {
+  @apply relative rounded-t-[9px] overflow-hidden object-cover h-full w-[50%] rounded-l-[9px] rounded-r-[0px];
 }

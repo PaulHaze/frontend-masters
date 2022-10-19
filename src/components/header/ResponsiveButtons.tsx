@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { useResponsiveStore } from '@/store/useResponsiveStore';
+import { useResponsiveStore } from '@/store';
 
 export function ResponsiveButtons() {
   const setViewSetting = useResponsiveStore((state) => state.setViewSetting);
