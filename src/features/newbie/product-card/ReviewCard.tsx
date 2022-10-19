@@ -6,7 +6,7 @@ import styles from './Card.module.scss';
 import CardImgDesktop from './assets/image-product-desktop.jpg';
 import CardImgMobile from './assets/image-product-mobile.jpg';
 
-export function ProductReviewCard() {
+export function ReviewCard() {
   return (
     <div className={styles.container}>
       <div className={styles.cardContainer}>
