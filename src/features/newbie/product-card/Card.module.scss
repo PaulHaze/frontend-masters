@@ -1,7 +1,6 @@
-//* COLOR VARIABLES
-
-// UNIVERSAL COLORS
-
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
 // LIGHT CARD COLORS
 $mainBg-Light: #f2ebe3;
 $cardBg-Light: #ffffff;
@@ -13,71 +12,190 @@ $priceText-Light: #3c8067;
 $btnBg-Light: #3c8067;
 
 // DARK CARD COLORS
-$mainBg-Dark: #6c7289;
+$mainBg-Dark: #44485c;
 $cardBg-Dark: #1c232b;
 $headerText-Dark: #ffffff;
-$catText-Dark: #67696b;
-$bodyText-Dark: #b2afac;
-$strikeThrough-Dark: #41464b;
+$catText-Dark: #afa8a8;
+$bodyText-Dark: #acbec7;
+$strikeThrough-Dark: #7f93a8;
 $priceText-Dark: #9cd3be;
 $btnBg-Dark: #129062;
 
-.container {
-  @apply w-full min-h-screen bg-[#f2ebe3] flex-center px-6;
-}
+// MEDIA QUERRY
+$screen-md: 768px;
 
+/*------------------------------------*\
+  #CSS
+\*------------------------------------*/
+
+.container {
+  @apply w-full min-h-screen bg-[#f2ebe3] flex items-center justify-center px-6;
+
+  /*   
+  *PURE CSS*
+  width: 100%;
+  min-height: 100vh;
+  background-color: $mainBg-Light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem; 
+  */
+}
 :global(.dark) .container {
   @apply bg-[#6c7289];
+
+  /* 
+  *PURE CSS*
+  background-color: $mainBg-Dark;
+  */
 }
 
 .cardContainer {
   @apply w-[360px] h-[610px] rounded-[9px] shadow overflow-hidden bg-white;
   @screen md {
-    @apply w-[700px] h-[552px] flex;
+    @apply w-[700px] h-[522px] flex;
   }
-  font-family: 'Montserrat';
+  /*  
+  *PURE CSS*
+  width: 360px;
+  height: 610px;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: white;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  @media (min-width: $screen-md) {
+    width: 700px;
+    height: 522px;
+  } 
+  */
+}
+:global(.dark) .cardContainer {
+  @apply bg-[#1c232b];
+  /* 
+  *PURE CSS*
+  background-color: $cardBg-Dark;
+  */
 }
 
 .imageContainer {
   @apply relative w-full h-[240px] rounded-t-[9px] overflow-hidden object-cover;
   @screen md {
-    @apply h-[552px] rounded-l-[9px] rounded-r-[0px] flex-1;
+    @apply h-full w-[50%] rounded-l-[9px] rounded-r-[0px];
   }
+
+  /*   
+  *PURE CSS*
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  overflow: hidden;
+  object-fit: cover;
+
+  @media (min-width: $screen-md) {
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px; 
+  }
+  */
 }
 
 .contentContainer {
-  @apply mx-6;
+  @apply px-6;
   @screen md {
-    @apply mx-0 flex-1 bb;
+    @apply w-[50%] px-10 py-5 flex flex-col;
   }
+
+  /* 
+  *PURE CSS*
+  padding: 0 1.5rem;
+  @media (min-width $screen-md) {
+    width: 50%;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  */
 }
 
 .cardCategory {
-  @apply mt-6 mb-3;
-  p {
+  @apply mt-6 mb-3 font-montserrat text-[#b5b8c4] font-semibold text-[12px] tracking-[0.45em] leading-[15px];
+  @screen md {
+    @apply mb-6 text-[14px];
+  }
+
+  /* 
+  *PURE CSS*
+    p {
     font-family: 'Montserrat';
     color: $catText-Light;
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.45em;
     line-height: 15px;
+    @media (min-width $screen-md) {
+      margin-top: 15rem;
+      font-size: 14px;
+    }
   }
+  */
+}
+:global(.dark) .cardCategory {
+  @apply text-[#afa8a8];
+
+  /* 
+  *PURE CSS*
+    p {
+    color: $catText-Dark;
+  }
+  */
 }
 
 .cardTitle {
-  @apply mb-3;
   h4 {
+    @apply mb-3 text-[#1c232b] text-[32px] font-fraunces font-bold leading-[101%];
+    @screen md {
+      @apply mb-6 text-[36px];
+    }
+  }
+  /* 
+  *PURE CSS*
+    h4 {
     color: $headerText-Light;
     font-family: 'Fraunces', serif;
     font-weight: bold;
     font-size: 32px;
     color: $headerText-Light;
     line-height: 101%;
+    @media (min-width $screen-md) {
+      margin-bottom: 1.5rem;
+      font-size: 36px;
+    }
+  }
+  */
+}
+:global(.dark) .cardTitle {
+  h4 {
+    @apply text-[#ffffff];
+    // color: $headerText-Dark;
   }
 }
 
 .cardBody {
   p {
+    @apply font-montserrat text-[#6c7289] text-[14px] tracking-[0.012em] leading-[161%] font-medium opacity-[0.9];
+    @screen md {
+      @apply text-base;
+    }
+    /* 
+    *PURE CSS
     font-family: 'Montserrat';
     color: $bodyText-Light;
     font-size: 14px;
@@ -85,19 +203,42 @@ $btnBg-Dark: #129062;
     line-height: 161%;
     font-weight: 500;
     opacity: 0.9;
+    @media (min-wdth $screen-md) {
+      font-size: 16px;
+    }
+    */
+  }
+}
+:global(.dark) .cardBody {
+  p {
+    @apply text-[#acbec7];
+    // color: $bodyText-Dark;
   }
 }
 
 .price {
-  @apply flex mt-5 mb-3 items-center;
+  @apply flex items-center;
   h5 {
+    @apply flex mt-5 mb-3 items-center text-[#3c8067] font-fraunces font-bold text-[32px] md:text-[36px];
+
+    /*
+    *PURE CSS*   
     color: $priceText-Light;
     font-family: 'Fraunces', serif;
     font-weight: bold;
     font-size: 32px;
+    @screen md {
+      font-size: 36px;
+    } 
+    */
   }
   p {
-    @apply ml-5 mt-1;
+    @apply ml-5 mt-1 font-semibold text-sm opacity-[0.7] text-[#787884] underline md:text-[0.9rem];
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    /*
+    *PURE CSS*
+    margin-top: 0.25rem;   
     font-weight: 600;
     font-size: 0.8rem;
     opacity: 0.7;
@@ -105,23 +246,74 @@ $btnBg-Dark: #129062;
     text-decoration: line-through;
     text-decoration-thickness: 2px;
     text-decoration-color: rgba(0, 0, 0, 0.3);
+    @media (max-width: $screen-md) {
+      font-size: 0.9rem;
+    }
+    */
+  }
+}
+:global(.dark) .price {
+  h5 {
+    @apply text-[#9cd3be];
+    // color: $priceText-Dark;
+  }
+  p {
+    @apply text-[#7f93a8];
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+    // color: $strikeThrough-Dark;
   }
 }
 
-.cartButton {
-  @apply mt-4 w-full rounded-lg flex-center py-3 text-white gap-2 duration-150;
+.buttonContainer {
+  @apply h-full flex-center;
+  // height: 100%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  button {
+    @apply w-full rounded-lg flex items-center justify-center py-3 text-white gap-2 duration-300 bg-[#3c8067];
+    /*  
+    *PURE CSS*   
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+    color: #fff;
+    transition-duration: 300ms;
+    background-color: $btnBg-Light; 
+    */
+    &:hover {
+      @apply bg-[#2a604c];
+      // background-color: #2a604c;
+    }
+    &:active {
+      @apply bg-[#1a3e31];
+      background-color: #1a3e31;
+    }
 
-  background-color: $btnBg-Light;
-  &:hover {
-    background-color: #2a604c;
+    h5 {
+      @apply font-montserrat font-extrabold text-[0.9rem];
+      // font-family: 'Montserrat';
+      // font-weight: 800;
+      // font-size: 0.9rem;
+    }
   }
-  &:active {
-    background-color: #1a3e31;
-  }
+}
 
-  h5 {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    font-size: 0.9rem;
+:global(.dark) .buttonContainer {
+  button {
+    @apply bg-[#129062];
+    // background-color: $btnBg-Dark;
+    &:hover {
+      @apply bg-[#135e42];
+      // background-color: #135e42;
+    }
+    &:active {
+      @apply bg-[#0e5d3f];
+      // background-color: #0e5d3f;
+    }
   }
 }

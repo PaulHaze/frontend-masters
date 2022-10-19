@@ -41,14 +41,15 @@ export function ProductReviewCard() {
             <h5>$149.99</h5>
             <p>$169.99</p>
           </div>
-
-          <button className={styles.cartButton} type="button">
-            <img
-              src="/icons/review-card/CartBtnIcon.svg"
-              alt="Shopping Cart Icon"
-            />
-            <h5> Add to Cart</h5>
-          </button>
+          <div className={styles.buttonContainer}>
+            <button type="button">
+              <img
+                src="/icons/review-card/CartBtnIcon.svg"
+                alt="Shopping Cart Icon"
+              />
+              <h5> Add to Cart</h5>
+            </button>
+          </div>
         </div>
       </div>
     </div>

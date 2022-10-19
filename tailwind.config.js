@@ -35,6 +35,10 @@ module.exports = {
       center: true,
     },
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        fraunces: ['Fraunces', 'serif'],
+      },
       colors: {
         offwhite: 'rgb(250,250,250)',
         primaryBg: {
