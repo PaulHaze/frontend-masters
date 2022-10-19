@@ -93,6 +93,13 @@ module.exports = {
           '@apply border border-green-600 sm:border-red-600 md:border-blue-600 lg:border-pink-600':
             {},
         },
+        '.strike-through': {
+          'text-decoration': 'line-through',
+        },
+        '.strike-through-2': {
+          'text-decoration': 'line-through',
+          'text-decoration-thickness': '2px',
+        },
       });
     }),
   ],

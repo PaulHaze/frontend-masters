@@ -28,27 +28,6 @@ $screen-md: 768px;
   #CSS - RESPONSIVE
 \*------------------------------------*/
 
-.container {
-  @apply w-full min-h-screen bg-[#f2ebe3] flex items-center justify-center px-6;
-  /*   
-  *PURE CSS*
-  width: 100%;
-  min-height: 100vh;
-  background-color: $mainBg-Light;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1.5rem; 
-*/
-}
-:global(.dark) .container {
-  @apply bg-[#6c7289];
-  /* 
-  *PURE CSS*
-  background-color: $mainBg-Dark;
-*/
-}
-
 .cardContainer {
   @apply w-[360px] h-[610px] rounded-[9px] shadow overflow-hidden bg-white;
   @screen md {
@@ -219,7 +198,7 @@ $screen-md: 768px;
 .price {
   @apply flex items-center;
   h5 {
-    @apply flex mt-5 mb-3 items-center text-[#3c8067] font-fraunces font-bold text-[32px] md:text-[36px];
+    @apply mt-5 mb-3 items-center text-[#3c8067] font-fraunces font-bold text-[32px] md:text-[36px];
 
     /*
     *PURE CSS*   
@@ -233,7 +212,7 @@ $screen-md: 768px;
     */
   }
   p {
-    @apply ml-5 mt-1 font-semibold text-sm opacity-[0.7] text-[#787884] underline md:text-[0.9rem];
+    @apply ml-5 mt-1 font-semibold text-sm opacity-[0.7] text-[#787884]  md:text-[0.9rem];
     text-decoration: line-through;
     text-decoration-thickness: 2px;
     /*
