@@ -1,0 +1,25 @@
+.btnBase {
+  @apply w-9 h-9 border text-xs shadow-sm bg-gradient-to-b from-white via-white to-gray-100 transition-all;
+}
+
+:global(.dark) .btnBase {
+  @apply bg-gradient-to-b border-slate-800/90 from-slate-500 via-slate-600 to-slate-800 text-white;
+}
+
+.btnLeft {
+  composes: btnBase;
+  @apply rounded-l-[5px] mr-[-1px];
+}
+.btnRight {
+  composes: btnBase;
+  @apply rounded-r-[5px] ml-[-1px];
+}
+
+.btnActive {
+  composes: btnBase;
+  @apply shadow-inner border-gray-500/20 bg-gradient-to-t from-white via-white to-gray-200/70;
+}
+
+:global(.dark) .btnActive {
+  @apply bg-gradient-to-t from-slate-600 via-slate-700 to-slate-800 text-white border-slate-800/90;
+}

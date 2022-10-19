@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import { useResponsiveSettings } from '@/hooks';
 
+import styles from './ResponsiveBtns.module.scss';
+
 export function ResponsiveButtons() {
   const { setViewSetting, isMobile, isDesktop, isResponsive } =
     useResponsiveSettings();
@@ -10,29 +12,23 @@ export function ResponsiveButtons() {
       <button
         type="button"
         onClick={() => setViewSetting('responsive')}
-        className={`px-2 py-2 rounded border text-xs ${
-          isResponsive && 'bg-gray-800 text-white'
-        }`}
+        className={`${styles.btnLeft} ${isResponsive && styles.btnActive}`}
       >
-        Responsive
+        R
       </button>
       <button
         type="button"
         onClick={() => setViewSetting('desktop')}
-        className={`px-2 py-2 rounded border text-xs ${
-          isDesktop && 'bg-gray-800 text-white'
-        }`}
+        className={`${styles.btnBase}  ${isDesktop && styles.btnActive}`}
       >
-        desktop
+        d
       </button>
       <button
         type="button"
         onClick={() => setViewSetting('mobile')}
-        className={`px-2 py-2 rounded border text-xs ${
-          isMobile && 'bg-gray-800 text-white'
-        }`}
+        className={`${styles.btnRight}  ${isMobile && styles.btnActive}`}
       >
-        mobile
+        m
       </button>
     </div>
   );

@@ -52,8 +52,7 @@ $screen-md: 768px;
   */
 }
 
-:global(.dark) .cardContainer,
-:global(.dark) .cardDesktop {
+:global(.dark) .cardContainer {
   @apply bg-[#1c232b];
   /* 
   *PURE CSS*
