@@ -6,11 +6,11 @@ export function ResponsiveButtons() {
   const { setViewSetting, isMobile, isDesktop, isResponsive } =
     useResponsiveSettings();
   return (
-    <div className="flex">
+    <div className="flex items-center">
       <button
         type="button"
         onClick={() => setViewSetting('responsive')}
-        className={`px-2 rounded border text-xs ${
+        className={`px-2 py-2 rounded border text-xs ${
           isResponsive && 'bg-gray-800 text-white'
         }`}
       >
@@ -19,7 +19,7 @@ export function ResponsiveButtons() {
       <button
         type="button"
         onClick={() => setViewSetting('desktop')}
-        className={`px-2 rounded border text-xs ${
+        className={`px-2 py-2 rounded border text-xs ${
           isDesktop && 'bg-gray-800 text-white'
         }`}
       >
@@ -28,7 +28,7 @@ export function ResponsiveButtons() {
       <button
         type="button"
         onClick={() => setViewSetting('mobile')}
-        className={`px-2 rounded border text-xs ${
+        className={`px-2 py-2 rounded border text-xs ${
           isMobile && 'bg-gray-800 text-white'
         }`}
       >
