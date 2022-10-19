@@ -271,7 +271,7 @@ $screen-md: 768px;
   // justify-content: center;
   // align-items: center;
   button {
-    @apply w-full rounded-lg flex items-center justify-center py-3 text-white gap-2 duration-300 bg-[#3c8067];
+    @apply w-full rounded-lg flex-center py-3 text-white gap-2 duration-300 bg-[#3c8067];
     /*  
     *PURE CSS*   
     width: 100%;

@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
@@ -74,4 +75,21 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.flex-center': {
+          '@apply flex items-center justify-center': {},
+        },
+        '.bb': {
+          '@apply border border-red-600 sm:border-blue-600 md:border-green-600 lg:border-black':
+            {},
+        },
+        '.bb2': {
+          '@apply border border-green-600 sm:border-red-600 md:border-blue-600 lg:border-pink-600':
+            {},
+        },
+      });
+    },
+  ],
 };
