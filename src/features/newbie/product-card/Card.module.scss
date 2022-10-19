@@ -296,15 +296,3 @@ $screen-md: 768px;
     }
   }
 }
-
-/*------------------------------------*\
-  #CSS - DESKTOP
-\*------------------------------------*/
-
-.cardDesktop {
-  @apply rounded-[9px] shadow overflow-hidden bg-white min-w-[700px] max-w-[700px] h-[522px] flex;
-}
-
-.imageDesktop {
-  @apply relative rounded-t-[9px] overflow-hidden object-cover h-full w-[50%] rounded-l-[9px] rounded-r-[0px];
-}
