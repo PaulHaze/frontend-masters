@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useTheme } from '@/hooks';
 
 import { DarkModeToggle } from './DarkModeToggle';
+import { ResponsiveButtons } from './ResponsiveButtons';
 
 import styles from './Header.module.scss';
 
@@ -24,6 +25,7 @@ export function Header() {
             />
           </div>
         </Link>
+        <ResponsiveButtons />
         <DarkModeToggle />
       </div>
     </div>

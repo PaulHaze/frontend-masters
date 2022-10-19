@@ -1,11 +1,17 @@
 import * as React from 'react';
 import Image from 'next/future/image';
+
+import { useResponsiveStore } from '@/store';
+
 import styles from './Card.module.scss';
 
 import CardImgDesktop from './assets/image-product-desktop.jpg';
 import CardImgMobile from './assets/image-product-mobile.jpg';
 
 export function ProductReviewCard() {
+  const viewSetting = useResponsiveStore((state) => state.viewSetting);
+
+  console.log(viewSetting);
   return (
     <div className={styles.container}>
       <div className={styles.cardContainer}>
