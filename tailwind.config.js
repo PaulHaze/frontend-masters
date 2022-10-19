@@ -1,4 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable func-names */
+
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
@@ -76,7 +80,7 @@ module.exports = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       addUtilities({
         '.flex-center': {
           '@apply flex items-center justify-center': {},
@@ -90,6 +94,6 @@ module.exports = {
             {},
         },
       });
-    },
+    }),
   ],
 };
