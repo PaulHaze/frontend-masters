@@ -33,25 +33,25 @@ const ProductCardPage: NextPage = () => {
           </h1>
         </div>
         <div
-          className={`flex justify-between w-[360px] mb-2 ${
+          className={`flex justify-between w-[360px] mb-2 space-x-2 ${
             !isMobile && 'md:w-[700px]'
           }`}
         >
-          <div className="px-5 py-3 rounded bg-white text-stone-700 text-sm shadow cursor-pointer hover:bg-stone-600 hover:text-white dark:bg-slate-700 dark:hover:bg-slate-900 dark:text-offwhite transition-all">
+          <div className="external-link">
             <a
               href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
-            View Challenge
+            Challenge
           </div>
-          <div className="px-5 py-3 rounded bg-white text-stone-700 text-sm shadow cursor-pointer hover:bg-stone-600 hover:text-white dark:bg-slate-700 dark:hover:bg-slate-900 dark:text-offwhite transition-all">
+          <div className="external-link">
             <a
-              href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+              href="https://github.com/PaulHaze/frontend-mentor/tree/main/src/features/newbie/product-card"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View On Github
+              Github
             </a>
           </div>
         </div>

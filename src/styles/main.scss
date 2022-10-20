@@ -32,6 +32,9 @@
 }
 
 @layer components {
+  .external-link {
+    @apply px-8 py-3 rounded bg-white text-stone-700 text-sm shadow relative font-bold tracking-wide cursor-pointer hover:bg-stone-600 hover:text-white dark:bg-slate-700 dark:hover:bg-slate-900 dark:text-offwhite transition-all uppercase flex-1 md:flex-none md:w-48;
+  }
 }
 
 @layer utilities {
