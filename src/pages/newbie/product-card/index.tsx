@@ -1,5 +1,6 @@
 import { MainLayout } from '@Layouts';
 import type { NextPage } from 'next';
+import { ExternalLink } from '@Components';
 
 import { useResponsiveSettings } from '@/hooks';
 
@@ -36,33 +37,15 @@ const ProductCardPage: NextPage = () => {
             !isMobile && 'md:w-[700px] '
           }`}
         >
-          <div
-            className={`external-link ${
-              isMobile && 'flex-1 after:left-[20px]'
-            }`}
-          >
-            <a
-              href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {' '}
-              Challenge
-            </a>
-          </div>
-          <div
-            className={`external-link ${
-              isMobile && 'flex-1 after:left-[20px]'
-            }`}
-          >
-            <a
-              href="https://github.com/PaulHaze/frontend-mentor/tree/main/src/features/newbie/product-card"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-          </div>
+          <ExternalLink
+            linkUrl="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+            className={isMobile && 'flex-1 after:left-[20px]'}
+          />
+          <ExternalLink
+            linkUrl="https://github.com/PaulHaze/frontend-mentor/tree/main/src/features/newbie/product-card"
+            github
+            className={isMobile && 'flex-1 after:left-[20px]'}
+          />
         </div>
         {cardToShow}
       </div>
