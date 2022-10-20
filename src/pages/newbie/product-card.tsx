@@ -34,10 +34,14 @@ const ProductCardPage: NextPage = () => {
         </div>
         <div
           className={`flex justify-between w-[360px] mb-2 space-x-2 ${
-            !isMobile && 'md:w-[700px]'
+            !isMobile && 'md:w-[700px] '
           }`}
         >
-          <div className="external-link">
+          <div
+            className={`external-link ${
+              isMobile && 'flex-1 after:left-[20px]'
+            }`}
+          >
             <a
               href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
               target="_blank"
@@ -47,7 +51,11 @@ const ProductCardPage: NextPage = () => {
               Challenge
             </a>
           </div>
-          <div className="external-link">
+          <div
+            className={`external-link ${
+              isMobile && 'flex-1 after:left-[20px]'
+            }`}
+          >
             <a
               href="https://github.com/PaulHaze/frontend-mentor/tree/main/src/features/newbie/product-card"
               target="_blank"

@@ -33,14 +33,13 @@
 
 @layer components {
   .external-link {
-    @apply px-8 py-3 rounded bg-stone-500 text-offwhite text-sm shadow relative font-bold tracking-wide cursor-pointer dark:bg-slate-700 dark:text-offwhite uppercase flex-1 md:flex-none transition-all duration-300 ease-in-out md:w-52 after:bg-stone-800 dark:after:bg-slate-800 overflow-hidden;
+    @apply px-8 py-3 rounded bg-stone-500 text-offwhite text-sm shadow relative font-bold tracking-wide cursor-pointer dark:bg-slate-700 dark:text-offwhite uppercase flex-1 md:flex-none transition-all duration-300 ease-in-out md:w-52 after:bg-stone-800 dark:after:bg-slate-800 after:left-[20px] md:after:left-[0px] overflow-hidden;
     > a {
       @apply relative z-10;
     }
     &:after {
       content: '';
       position: absolute;
-      left: 0px;
       top: 0px;
       height: 700%;
       width: 120%;
