@@ -1,5 +1,4 @@
 import { MainLayout } from '@Layouts';
-
 import type { NextPage } from 'next';
 
 import { useResponsiveSettings } from '@/hooks';
