@@ -42,8 +42,10 @@ const ProductCardPage: NextPage = () => {
               href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            Challenge
+            >
+              {' '}
+              Challenge
+            </a>
           </div>
           <div className="external-link">
             <a

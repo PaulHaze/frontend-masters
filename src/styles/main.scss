@@ -33,7 +33,23 @@
 
 @layer components {
   .external-link {
-    @apply px-8 py-3 rounded bg-white text-stone-700 text-sm shadow relative font-bold tracking-wide cursor-pointer hover:bg-stone-600 hover:text-white dark:bg-slate-700 dark:hover:bg-slate-900 dark:text-offwhite transition-all uppercase flex-1 md:flex-none md:w-48;
+    @apply px-8 py-3 rounded bg-stone-500 text-offwhite text-sm shadow relative font-bold tracking-wide cursor-pointer dark:bg-slate-700 dark:text-offwhite uppercase flex-1 md:flex-none transition-all duration-300 ease-in-out md:w-52 after:bg-stone-800 dark:after:bg-slate-800 overflow-hidden;
+    > a {
+      @apply relative z-10;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 700%;
+      width: 120%;
+      transition: all 0.3s ease-in-out 0s;
+      transform: translateX(55%) translateY(-10%) rotate(-45deg);
+    }
+    &:hover::after {
+      transform: translateY(-30%) rotate(-90deg);
+    }
   }
 }
 
