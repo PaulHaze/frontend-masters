@@ -5,7 +5,7 @@ import { BsGithub, BsArrowRightCircleFill } from 'react-icons/bs';
 export type ExternalLinkProps = {
   linkUrl: string;
   github?: boolean;
-  className?: string;
+  className?: string | boolean;
 };
 
 export function ExternalLink({
@@ -14,7 +14,7 @@ export function ExternalLink({
   className,
 }: ExternalLinkProps) {
   return (
-    <div className={`external-link  ${className}`}>
+    <div className={`external-link ${className}`}>
       <a
         className="flex items-center justify-between  scale-100"
         href={linkUrl}
