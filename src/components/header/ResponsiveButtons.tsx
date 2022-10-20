@@ -10,6 +10,7 @@ export function ResponsiveButtons() {
     <div className="flex items-center">
       <button
         type="button"
+        title="Responsive Mode"
         onClick={() => setViewSetting('responsive')}
         className={`${styles.btnLeft} ${isResponsive && styles.btnActive}`}
       >
@@ -22,6 +23,7 @@ export function ResponsiveButtons() {
       </button>
       <button
         type="button"
+        title="Desktop Mode"
         onClick={() => setViewSetting('desktop')}
         className={`${styles.btnBase} ${isDesktop && styles.btnActive}`}
       >
@@ -34,6 +36,7 @@ export function ResponsiveButtons() {
       </button>
       <button
         type="button"
+        title="Mobile Mode"
         onClick={() => setViewSetting('mobile')}
         className={`${styles.btnRight} ${isMobile && styles.btnActive}`}
       >

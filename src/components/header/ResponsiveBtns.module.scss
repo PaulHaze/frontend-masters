@@ -1,5 +1,6 @@
 .btnBase {
   @apply relative w-9 h-9 border text-xs shadow-sm bg-gradient-to-b from-white via-white to-gray-200/80 transition-all flex justify-between items-center;
+
   @screen sm {
     @apply w-20 h-11;
   }
