@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import { useResponsiveSettings } from '@/hooks';
 
 import styles from './ResponsiveBtns.module.scss';
@@ -14,21 +13,37 @@ export function ResponsiveButtons() {
         onClick={() => setViewSetting('responsive')}
         className={`${styles.btnLeft} ${isResponsive && styles.btnActive}`}
       >
-        R
+        <img
+          className={styles.btnIcon}
+          src="/icons/responsive-icon.svg"
+          alt="Select Responsive View Icon"
+        />
+        <div className={styles.iconLabel}>Responsive</div>
       </button>
       <button
         type="button"
         onClick={() => setViewSetting('desktop')}
-        className={`${styles.btnBase}  ${isDesktop && styles.btnActive}`}
+        className={`${styles.btnBase} ${isDesktop && styles.btnActive}`}
       >
-        d
+        <img
+          className={styles.btnIcon}
+          src="/icons/desktop-icon.svg"
+          alt="Select Desktop View Icon"
+        />
+        <div className={styles.iconLabel}>Desktop</div>
       </button>
       <button
         type="button"
         onClick={() => setViewSetting('mobile')}
-        className={`${styles.btnRight}  ${isMobile && styles.btnActive}`}
+        className={`${styles.btnRight} ${isMobile && styles.btnActive}`}
       >
-        m
+        <img
+          className={styles.btnIcon}
+          src="/icons/mobile-icon.svg"
+          alt="Select Mobile View Icon"
+        />
+
+        <div className={styles.iconLabel}>Mobile</div>
       </button>
     </div>
   );

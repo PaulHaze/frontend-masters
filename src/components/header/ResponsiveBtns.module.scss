@@ -1,5 +1,14 @@
 .btnBase {
-  @apply w-9 h-9 border text-xs shadow-sm bg-gradient-to-b from-white via-white to-gray-100 transition-all;
+  @apply relative w-9 h-9 border text-xs shadow-sm bg-gradient-to-b from-white via-white to-gray-200/80 transition-all flex justify-between items-center;
+  @screen sm {
+    @apply w-20 h-11;
+  }
+  @screen md {
+    @apply w-32;
+  }
+  @screen lg {
+    @apply w-44;
+  }
 }
 
 :global(.dark) .btnBase {
@@ -22,4 +31,21 @@
 
 :global(.dark) .btnActive {
   @apply bg-gradient-to-t from-slate-600 via-slate-700 to-slate-800 text-white border-slate-800/90;
+}
+
+.btnIcon {
+  @apply cursor-pointer p-2 w-full h-10 text-center lg:px-0;
+  filter: opacity(45%);
+}
+
+:global(.dark) .btnIcon {
+  filter: invert(100%) opacity(75%) brightness(118%);
+}
+
+.iconLabel {
+  @apply hidden lg:block lg:mr-5 lg:text-sm lg:font-semibold text-gray-500 w-full text-left;
+}
+
+:global(.dark) .iconLabel {
+  @apply text-white/70;
 }
