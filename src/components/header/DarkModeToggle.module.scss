@@ -22,11 +22,15 @@ $focusRingColor: rgb(59 130 246 / 0.5);
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   span {
-    @apply p-2;
+    @apply p-1.5;
     transition: color $TOGGLE_DURATION ease-in-out;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
+    @screen sm {
+      @apply p-2;
+      font-size: 12px;
+    }
   }
   input {
     @apply relative overflow-hidden;

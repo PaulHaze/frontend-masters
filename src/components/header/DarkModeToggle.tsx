@@ -13,7 +13,7 @@ export function DarkModeToggle() {
         <span
           className={
             isDarkMode
-              ? 'text-offwhite cursor-default'
+              ? 'text-offwhite cursor-default '
               : 'text-gray-500 cursor-pointer hover:text-gray-900'
           }
           onClick={() => setTheme('dark')}
