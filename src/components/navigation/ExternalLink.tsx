@@ -16,7 +16,7 @@ export function ExternalLink({
   return (
     <div className={`external-link ${className}`}>
       <a
-        className="flex items-center justify-between  scale-100"
+        className="flex items-center justify-between"
         href={linkUrl}
         target="_blank"
         rel="noopener noreferrer"
