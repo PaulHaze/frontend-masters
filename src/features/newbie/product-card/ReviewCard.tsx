@@ -14,6 +14,7 @@ export function ReviewCard() {
         {/* IMAGE COMPONENT */}
         <div className={styles.imageContainer}>
           <Image
+            placeholder="blur"
             src={CardImgMobile}
             alt="Image of Chanel perfume"
             className="overflow-hidden md:hidden object-cover"
@@ -21,6 +22,7 @@ export function ReviewCard() {
           />
 
           <Image
+            placeholder="blur"
             src={CardImgDesktop}
             alt="Image of Chanel perfume"
             className="hidden md:block overflow-hidden"

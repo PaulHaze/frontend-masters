@@ -9,6 +9,7 @@ export function ReviewCardDesktop() {
       {/* IMAGE COMPONENT */}
       <div className="relative w-[50%] rounded-l-[9px] overflow-hidden">
         <Image
+          placeholder="blur"
           src={CardImgDesktop}
           alt="Image of Chanel perfume"
           className="block overflow-hidden"

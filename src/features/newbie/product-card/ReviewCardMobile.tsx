@@ -10,6 +10,7 @@ export function ReviewCardMobile() {
       {/* IMAGE COMPONENT */}
       <div className="relative w-full h-[240px] rounded-t-[9px] overflow-hidden">
         <Image
+          placeholder="blur"
           src={CardImgMobile}
           alt="Image of Chanel perfume"
           className="block overflow-hidden object-cover"
