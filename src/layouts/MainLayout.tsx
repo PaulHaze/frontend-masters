@@ -17,7 +17,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       />
       <div className="w-full">
         <Header />
-        <div>{children}</div>
+        <main>{children}</main>
       </div>
     </div>
   );

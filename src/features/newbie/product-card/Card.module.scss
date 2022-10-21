@@ -137,7 +137,7 @@ $screen-md: 768px;
 }
 
 .cardTitle {
-  h4 {
+  p {
     @apply mb-3 text-[#1c232b] text-[32px] font-fraunces font-bold leading-[101%];
     @screen md {
       @apply mb-6 text-[36px];
@@ -160,7 +160,7 @@ $screen-md: 768px;
   */
 }
 :global(.dark) .cardTitle {
-  h4 {
+  p {
     @apply text-[#ffffff];
     // color: $headerText-Dark;
   }
@@ -249,7 +249,7 @@ $screen-md: 768px;
   // justify-content: center;
   // align-items: center;
   button {
-    @apply w-full rounded-lg flex-center py-3 text-white gap-2 duration-300 bg-[#3c8067];
+    @apply w-full rounded-lg flex-center py-3 text-white gap-2 duration-300 bg-[#3c8067] font-montserrat font-extrabold text-[0.9rem];
     /*  
     *PURE CSS*   
     width: 100%;

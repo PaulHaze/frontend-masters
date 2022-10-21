@@ -27,6 +27,7 @@ export function DarkModeToggle() {
         type="checkbox"
         role="switch"
         checked={!isDarkMode}
+        aria-checked={!isDarkMode}
         aria-label="dark light theme switch"
         onChange={() => setTheme(isDarkMode ? 'light' : 'dark')}
       />

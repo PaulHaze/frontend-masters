@@ -35,7 +35,7 @@ export function ReviewCard() {
             <p>PERFUME</p>
           </div>
           <div className={styles.cardTitle}>
-            <h4>Gabrielle Essence Eau De Parfum</h4>
+            <p>Gabrielle Essence Eau De Parfum</p>
           </div>
           <div className={styles.cardBody}>
             <p>
@@ -53,7 +53,7 @@ export function ReviewCard() {
                 src="/icons/review-card/CartBtnIcon.svg"
                 alt="Shopping Cart Icon"
               />
-              <h5> Add to Cart</h5>
+              Add to Cart
             </button>
           </div>
         </div>

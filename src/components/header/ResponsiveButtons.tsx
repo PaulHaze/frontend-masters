@@ -18,7 +18,7 @@ export function ResponsiveButtons() {
           src="/icons/responsive-icon.svg"
           alt="Select Responsive View Icon"
         />
-        <div className={styles.iconLabel}>Responsive</div>
+        <span className={styles.iconLabel}>Responsive</span>
       </button>
       <button
         type="button"
@@ -31,7 +31,7 @@ export function ResponsiveButtons() {
           src="/icons/desktop-icon.svg"
           alt="Select Desktop View Icon"
         />
-        <div className={styles.iconLabel}>Desktop</div>
+        <span className={styles.iconLabel}>Desktop</span>
       </button>
       <button
         type="button"
@@ -45,7 +45,7 @@ export function ResponsiveButtons() {
           alt="Select Mobile View Icon"
         />
 
-        <div className={styles.iconLabel}>Mobile</div>
+        <span className={styles.iconLabel}>Mobile</span>
       </button>
     </div>
   );

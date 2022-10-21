@@ -42,15 +42,13 @@ export function ReviewCardMobile() {
         <div className="">
           <button
             type="button"
-            className="w-full rounded-lg flex-center py-3 text-white gap-2 duration-300 bg-[#3c8067] hover:bg-[#2a604c] active:bg-[#1a3e31]"
+            className="w-full rounded-lg flex-center py-3 text-white gap-2 duration-300 font-montserrat font-extrabold text-[0.9rem] bg-[#3c8067] hover:bg-[#2a604c] active:bg-[#1a3e31]"
           >
             <img
               src="/icons/review-card/CartBtnIcon.svg"
               alt="Shopping Cart Icon"
             />
-            <h5 className="font-montserrat font-extrabold text-[0.9rem]">
-              Add to Cart
-            </h5>
+            Add to Cart
           </button>
         </div>
       </div>
