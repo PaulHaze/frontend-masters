@@ -19,10 +19,8 @@ $focusRingColor: rgb(59 130 246 / 0.5);
 
 .toggle {
   @apply inline-flex items-center;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
   span {
-    @apply p-1.5;
+    @apply p-1.5 transition-colors;
     transition: color $TOGGLE_DURATION ease-in-out;
     font-size: 10px;
     font-weight: 600;
