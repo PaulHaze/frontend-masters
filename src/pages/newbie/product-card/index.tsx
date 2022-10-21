@@ -23,7 +23,7 @@ const ProductCardPage: NextPage = () => {
   );
   return (
     <MainLayout>
-      <div className="h-[100vh] flex flex-col items-center bg-[#f2ebe3] dark:text-offwhite dark:bg-[#6c7289]">
+      <div className="min-h-[100vh] pb-10 flex flex-col items-center bg-[#f2ebe3] dark:text-offwhite dark:bg-[#6c7289]">
         <div className="pt-10 mb-10 inline-flex justify-center gap-2 md:flex md:justify-between w-full max-w-[700px]">
           <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-semibold text-stone-700 dark:text-slate-900">
             Newbie Challenge:
