@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useResponsiveSettings } from '@/hooks';
 
 import styles from './ResponsiveBtns.module.scss';
