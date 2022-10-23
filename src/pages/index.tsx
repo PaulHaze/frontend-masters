@@ -5,8 +5,6 @@ import Link from 'next/link';
 
 import { CardThumbLink } from '@/features/newbie';
 
-import { DarkModeSwitch } from '@/components/header/DarkModeSwitch';
-
 const Home: NextPage = () => {
   return (
     <MainLayout>
@@ -17,7 +15,6 @@ const Home: NextPage = () => {
           </a>
         </Link>
         <CardThumbLink />
-        <DarkModeSwitch />
       </div>
     </MainLayout>
   );

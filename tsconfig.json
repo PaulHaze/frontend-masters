@@ -39,7 +39,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/header/DarkModeSwitch.jsx"
+    "src/components/header/DarkModeSwitch.tsx"
   ],
   "exclude": ["./out/**/*", "./node_modules/**/*", "**/*.cy.ts"]
 }
