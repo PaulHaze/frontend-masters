@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 import { useTheme } from '@/hooks';
 
-// import { DarkModeToggle } from './DarkModeToggle';
 import { ResponsiveButtons } from './ResponsiveButtons';
 import { DarkModeSwitch } from './DarkModeSwitch';
 
@@ -15,7 +14,7 @@ export function Header() {
     <header className="w-full px-1">
       <div className="max-w-lg mx-auto flex justify-between px-2 sm:px-4 md:px-8 py-5">
         <Link href="/">
-          <div className="relative mt-1 w-[150px] sm:w-[195px] sm:h-[55px] mr-2">
+          <div className="relative mt-1 w-[150px] sm:w-[180px] sm:h-[55px]">
             <Image
               layout="fill"
               className="cursor-pointer"
@@ -24,7 +23,12 @@ export function Header() {
             />
           </div>
         </Link>
-        <ResponsiveButtons />
+        <div
+          className="flex flex-grow justify-center relative right-10 sm:right-20
+        "
+        >
+          <ResponsiveButtons />
+        </div>
         <DarkModeSwitch />
       </div>
     </header>

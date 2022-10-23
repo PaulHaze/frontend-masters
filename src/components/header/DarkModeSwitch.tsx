@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { useSpring, animated } from 'react-spring';
 
-import { useTheme } from '../../hooks/useTheme.ts';
+import { useTheme } from '../../hooks/useTheme';
 
 export function DarkModeSwitch() {
   const { setTheme, isDarkMode } = useTheme();
@@ -68,7 +68,7 @@ export function DarkModeSwitch() {
         <mask id="mask">
           <rect x="0" y="0" width="100%" height="100%" fill="white" />
           <animated.circle
-            style={maskedCircleProps}
+            style={maskedCircleProps as any}
             cx="12"
             cy="4"
             r="9"
@@ -76,7 +76,7 @@ export function DarkModeSwitch() {
           />
         </mask>
         <animated.circle
-          style={centerCircleProps}
+          style={centerCircleProps as any}
           fill={isDarkMode ? darkIconColor : lightIconColor}
           cx="12"
           cy="12"
