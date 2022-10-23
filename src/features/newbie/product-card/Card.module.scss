@@ -30,6 +30,9 @@ $screen-md: 768px;
 
 .cardContainer {
   @apply max-w-[360px] h-[610px] rounded-[9px] shadow overflow-hidden bg-white cursor-pointer;
+  @screen sm {
+    @apply sm:w-[360px] max-w-none;
+  }
   @screen md {
     @apply w-[700px] h-[522px] flex;
   }
