@@ -1,11 +1,10 @@
+/* eslint-disable import/prefer-default-export */
 import * as React from 'react';
 import { useSpring, animated } from 'react-spring';
 
-import { useTheme } from '@/hooks';
+import { useTheme } from '../../hooks/useTheme.ts';
 
 export function DarkModeSwitch() {
-  // const [isDarkMode, toggle] = React.useState(false);
-
   const { setTheme, isDarkMode } = useTheme();
 
   const properties = {
@@ -45,15 +44,21 @@ export function DarkModeSwitch() {
 
   const linesProps = useSpring({ opacity, config: properties.springConfig });
 
+  const lightIconColor = '#8c8c8c';
+  const darkIconColor = '#f1f1f1';
+
   return (
-    <div>
+    <button
+      type="button"
+      title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      className="flex-center w-5 mr-1"
+    >
       <animated.svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
         viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
+        stroke={isDarkMode ? 'currentColor' : lightIconColor}
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -72,7 +77,7 @@ export function DarkModeSwitch() {
         </mask>
         <animated.circle
           style={centerCircleProps}
-          fill={isDarkMode ? '#f1f1f1' : '#0f172a'}
+          fill={isDarkMode ? darkIconColor : lightIconColor}
           cx="12"
           cy="12"
           r="9"
@@ -90,6 +95,6 @@ export function DarkModeSwitch() {
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
         </animated.g>
       </animated.svg>
-    </div>
+    </button>
   );
 }

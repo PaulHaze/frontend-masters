@@ -4,8 +4,9 @@ import Image from 'next/image';
 
 import { useTheme } from '@/hooks';
 
-import { DarkModeToggle } from './DarkModeToggle';
+// import { DarkModeToggle } from './DarkModeToggle';
 import { ResponsiveButtons } from './ResponsiveButtons';
+import { DarkModeSwitch } from './DarkModeSwitch';
 
 export function Header() {
   const { isDarkMode } = useTheme();
@@ -24,7 +25,7 @@ export function Header() {
           </div>
         </Link>
         <ResponsiveButtons />
-        <DarkModeToggle />
+        <DarkModeSwitch />
       </div>
     </header>
   );
