@@ -44,7 +44,7 @@ export function ReviewCard() {
             </p>
           </div>
           <div className={styles.price}>
-            <h5>$149.99</h5>
+            <div className={styles.priceMain}>$149.99</div>
             <p>$169.99</p>
           </div>
           <div className={styles.buttonContainer}>

@@ -196,7 +196,7 @@ $screen-md: 768px;
 
 .price {
   @apply flex items-center;
-  h5 {
+  .priceMain {
     @apply mt-5 mb-3 items-center text-[#3c8067] font-fraunces font-bold text-[32px] md:text-[36px];
 
     /*

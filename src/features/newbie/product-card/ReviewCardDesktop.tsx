@@ -31,9 +31,9 @@ export function ReviewCardDesktop() {
           </p>
         </div>
         <div className="flex items-center">
-          <h5 className="mt-5 mb-3 text-[#3c8067] font-fraunces font-bold text-[36px] dark:text-[#9cd3be] ">
+          <p className="mt-5 mb-3 text-[#3c8067] font-fraunces font-bold text-[36px] dark:text-[#9cd3be] ">
             $149.99
-          </h5>
+          </p>
           <p className="ml-5 mt-1 font-semibold opacity-[0.7] text-[#787884] text-[0.9rem] strike-through-2 dark:text-[#7f93a8]">
             $169.99
           </p>
