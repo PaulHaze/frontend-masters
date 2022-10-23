@@ -35,6 +35,11 @@
       "@Routes": ["src/routes/index"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/header/DarkModeSwitch.jsx"
+  ],
   "exclude": ["./out/**/*", "./node_modules/**/*", "**/*.cy.ts"]
 }
