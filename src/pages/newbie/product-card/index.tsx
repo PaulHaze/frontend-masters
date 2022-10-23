@@ -24,11 +24,11 @@ const ProductCardPage: NextPage = () => {
   return (
     <MainLayout>
       <div className="min-h-[100vh] pb-10 flex flex-col items-center bg-[#f2ebe3] dark:text-offwhite dark:bg-[#6c7289]">
-        <div className="pt-10 mb-10 inline-flex justify-center gap-2 md:flex md:justify-between w-full max-w-[700px]">
-          <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-semibold text-stone-700 dark:text-slate-900">
+        <div className="pt-10 mb-10 inline-flex justify-center gap-2 md:flex md:justify-between w-full max-w-[700px] px-2">
+          <h1 className="text-lg sm:text-2xl md:text-3xl text-center font-semibold text-stone-700 dark:text-slate-900">
             Newbie Challenge:
           </h1>
-          <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-semibold text-stone-700 dark:text-slate-900">
+          <h1 className="text-lg sm:text-2xl md:text-3xl text-center font-semibold text-stone-700 dark:text-slate-900">
             Product Review Card
           </h1>
         </div>
@@ -47,7 +47,7 @@ const ProductCardPage: NextPage = () => {
             className={isMobile && 'flex-1 after:left-[20px]'}
           />
         </div>
-        {cardToShow}
+        <div className="px-2">{cardToShow}</div>
       </div>
     </MainLayout>
   );
