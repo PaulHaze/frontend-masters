@@ -3,7 +3,7 @@ import { MainLayout } from '@Layouts';
 
 import Link from 'next/link';
 
-import { CardThumbLink } from '@/features/newbie';
+import { CardThumbLink, FeedbackCard } from '@/features/newbie';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +15,7 @@ const Home: NextPage = () => {
           </a>
         </Link>
         <CardThumbLink />
+        <FeedbackCard />
       </div>
     </MainLayout>
   );
