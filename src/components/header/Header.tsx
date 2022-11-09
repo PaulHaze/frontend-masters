@@ -16,7 +16,7 @@ export function Header() {
         <Link href="/">
           <div className="relative mt-1 w-[150px] sm:w-[180px] sm:h-[55px]">
             <Image
-              layout="fill"
+              fill
               className="cursor-pointer"
               src={logoSrc}
               alt="Frontend mentor logo"
