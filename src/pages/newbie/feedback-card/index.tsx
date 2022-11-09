@@ -24,7 +24,7 @@ const FeedBackPage: NextPage = () => {
           }`}
         >
           <ExternalLink
-            linkUrl="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+            linkUrl="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
             className={isMobile && 'flex-1 after:left-[20px]'}
           />
           <ExternalLink

@@ -60,8 +60,8 @@ export function DarkModeSwitch() {
         viewBox="0 0 24 24"
         stroke={isDarkMode ? 'currentColor' : lightIconColor}
         strokeWidth="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         style={{ ...svgContainerProps, cursor: 'pointer' }}
         onClick={() => setTheme(isDarkMode ? 'light' : 'dark')}
       >
