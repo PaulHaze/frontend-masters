@@ -6,3 +6,4 @@ export * from './product-card/ReviewCardMobile';
 
 // FEEDBACK CARD
 export * from './feedback-card/FeedbackCard';
+export * from './feedback-card/FeedbackThumbLink';

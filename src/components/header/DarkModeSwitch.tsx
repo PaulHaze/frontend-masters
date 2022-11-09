@@ -59,7 +59,7 @@ export function DarkModeSwitch() {
         height="24"
         viewBox="0 0 24 24"
         stroke={isDarkMode ? 'currentColor' : lightIconColor}
-        stroke-width="2"
+        strokeWidth="2"
         stroke-linecap="round"
         stroke-linejoin="round"
         style={{ ...svgContainerProps, cursor: 'pointer' }}

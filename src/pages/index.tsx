@@ -3,7 +3,7 @@ import { MainLayout } from '@Layouts';
 
 import Link from 'next/link';
 
-import { CardThumbLink, FeedbackCard } from '@/features/newbie';
+import { CardThumbLink, FeedbackThumbLink } from '@/features';
 
 const Home: NextPage = () => {
   return (
@@ -15,8 +15,10 @@ const Home: NextPage = () => {
         >
           Newbie Challenges:
         </Link>
-        <CardThumbLink />
-        <FeedbackCard />
+        <div className="flex">
+          <CardThumbLink />
+          <FeedbackThumbLink />
+        </div>
       </div>
     </MainLayout>
   );
