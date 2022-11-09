@@ -5,7 +5,7 @@ import { FeedbackCard } from '@Features';
 
 import { useResponsiveSettings } from '@/hooks';
 
-export default function FeedBack(): NextPage {
+const FeedBackPage: NextPage = () => {
   const { isMobile } = useResponsiveSettings();
   return (
     <MainLayout>
@@ -39,4 +39,6 @@ export default function FeedBack(): NextPage {
       </div>
     </MainLayout>
   );
-}
+};
+
+export default FeedBackPage;

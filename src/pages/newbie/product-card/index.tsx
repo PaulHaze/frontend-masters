@@ -6,7 +6,7 @@ import { useResponsiveSettings } from '@/hooks';
 
 import { ReviewCard, ReviewCardDesktop, ReviewCardMobile } from '@/features';
 
-export default function ProductCardPage(): NextPage {
+const ProductCardPage: NextPage = () => {
   const { isMobile, isDesktop } = useResponsiveSettings();
 
   // eslint-disable-next-line no-nested-ternary
@@ -47,4 +47,6 @@ export default function ProductCardPage(): NextPage {
       </div>
     </MainLayout>
   );
-}
+};
+
+export default ProductCardPage;
