@@ -6,6 +6,7 @@ specifiers:
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
   '@next/bundle-analyzer': ^12.3.1
+  '@next/font': ^13.0.2
   '@testing-library/cypress': ^8.0.3
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^13.4.0
@@ -60,6 +61,7 @@ specifiers:
   zustand: ^4.1.2
 
 dependencies:
+  '@next/font': 13.0.2
   lint: 0.7.0
   next: 13.0.2_vgii64pd2ccbnbx2v3ro5gbin4
   next-seo: 5.14.0_pknogjuzx4bv7zxtatcb2ahtsq
@@ -1841,6 +1843,10 @@ packages:
     dependencies:
       glob: 7.1.7
     dev: true
+
+  /@next/font/13.0.2:
+    resolution: {integrity: sha512-tLbyZCA1uF8HjbUEN5c4zB453yEzt5aT9VDhXPw1/eJhX4U0Q4lD3s3Bs+gpCjuLrEgILd56jQuzxgrMnWHH8A==}
+    dev: false
 
   /@next/swc-android-arm-eabi/13.0.2:
     resolution: {integrity: sha512-X54UQCTFyOGnJP//Z71dPPlp4BCYcQL2ncikKXQcPzVpqPs4C3m+tKC8ivBNH6edAXkppwsLRz1/yQwgSZ9Swg==}

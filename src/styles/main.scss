@@ -58,6 +58,10 @@
       transform: translateY(-30%) rotate(-90deg);
     }
   }
+  .feedback-card-bg {
+    background: radial-gradient(91.2% 91.16% at 92.91% 92.49%, #151c27 0%, #1E252F 59.84%);
+    // @apply bg-gradient-to-br from-[#1E252F] to-[#171E28];
+  }
 }
 
 @layer utilities {
