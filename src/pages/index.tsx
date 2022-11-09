@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         >
           Newbie Challenges:
         </Link>
-        <div className="flex">
+        <div className="flex space-x-4">
           <CardThumbLink />
           <FeedbackThumbLink />
         </div>
