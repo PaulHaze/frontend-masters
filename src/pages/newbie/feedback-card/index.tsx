@@ -28,7 +28,7 @@ export default function FeedBack(): NextPage {
             className={isMobile && 'flex-1 after:left-[20px]'}
           />
           <ExternalLink
-            linkUrl="https://github.com/PaulHaze/frontend-mentor/tree/main/src/features/newbie/product-card"
+            linkUrl="https://github.com/PaulHaze/frontend-mentor/tree/main/src/features/newbie/feedback-card"
             github
             className={isMobile && 'flex-1 after:left-[20px]'}
           />
