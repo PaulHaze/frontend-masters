@@ -4,13 +4,9 @@ import { ExternalLink } from '@Components';
 
 import { useResponsiveSettings } from '@/hooks';
 
-import {
-  ReviewCard,
-  ReviewCardDesktop,
-  ReviewCardMobile,
-} from '@/features/newbie';
+import { ReviewCard, ReviewCardDesktop, ReviewCardMobile } from '@/features';
 
-const ProductCardPage: NextPage = () => {
+export default function ProductCardPage(): NextPage {
   const { isMobile, isDesktop } = useResponsiveSettings();
 
   // eslint-disable-next-line no-nested-ternary
@@ -51,6 +47,4 @@ const ProductCardPage: NextPage = () => {
       </div>
     </MainLayout>
   );
-};
-
-export default ProductCardPage;
+}
