@@ -11,10 +11,10 @@ export function Header() {
   const { isDarkMode } = useTheme();
   const logoSrc = isDarkMode ? '/logo-desktop-dark.svg' : '/logo-desktop.svg';
   return (
-    <header className="w-full px-">
+    <header className="w-full">
       <div className="max-w-lg mx-auto flex justify-between px-2 sm:px-4 md:px-8 py-5">
         <Link href="/">
-          <div className="relative mt-1 w-[150px] sm:w-[180px] sm:h-[55px]">
+          <div className="relative mt-1 w-[150px] h-[45px] sm:w-[170px] sm:h-[55px]">
             <Image
               fill
               className="cursor-pointer"
