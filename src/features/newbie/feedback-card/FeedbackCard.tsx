@@ -1,5 +1,8 @@
+/* eslint-disable import/order */
 import Image from 'next/image';
 import { Overpass } from '@next/font/google';
+
+import { Rating } from './Rating';
 
 import Star from '@/assets/img/feedback/star.svg';
 
@@ -26,6 +29,11 @@ export function FeedbackCard() {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
+
+      {/* RATING */}
+      <div className="flex mt-8">
+        <Rating rating="1" />
+      </div>
     </div>
   );
 }
