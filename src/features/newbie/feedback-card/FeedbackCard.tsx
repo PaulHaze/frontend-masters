@@ -17,9 +17,9 @@ type RatingRange = '1' | '2' | '3' | '4' | '5';
 const ratings: RatingRange[] = ['1', '2', '3', '4', '5'];
 
 export function FeedbackCard() {
-  const [selectedRating, setSelectedRating] = React.useState('3');
+  const [selectedRating, setSelectedRating] = React.useState<RatingRange>('3');
 
-  const handleSelectRating = (selection) => {
+  const handleSelectRating = (selection: RatingRange) => {
     setSelectedRating(selection);
   };
 

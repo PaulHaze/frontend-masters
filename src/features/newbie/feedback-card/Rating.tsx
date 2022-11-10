@@ -1,7 +1,9 @@
+type RatingRange = '1' | '2' | '3' | '4' | '5';
+
 type RatingProps = {
-  rating: string;
-  selectedRating: string;
-  handleSelectRating: () => void;
+  rating: RatingRange;
+  selectedRating: RatingRange;
+  handleSelectRating: (selection: RatingRange) => void;
 };
 
 export function Rating({
