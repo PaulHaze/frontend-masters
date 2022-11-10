@@ -22,6 +22,10 @@ export function FeedbackCard() {
       <h1 className="font-[600] mt-7 text-[28px]">How did we do?</h1>
 
       {/* MAIN TEXT */}
+      <p className="text-[15px] leading-6 mt-3">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
     </div>
   );
 }
