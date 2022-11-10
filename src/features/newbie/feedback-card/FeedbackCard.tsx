@@ -1,4 +1,6 @@
 /* eslint-disable import/order */
+import * as React from 'react';
+
 import Image from 'next/image';
 import { Overpass } from '@next/font/google';
 
@@ -11,11 +13,23 @@ const overpass = Overpass({
   subsets: ['latin'],
 });
 
-const ratings = ['1', '2', '3', '4', '5'];
+type RatingRange = '1' | '2' | '3' | '4' | '5';
+const ratings: RatingRange[] = ['1', '2', '3', '4', '5'];
 
 export function FeedbackCard() {
+  const [selectedRating, setSelectedRating] = React.useState('3');
+
+  const handleSelectRating = (selection) => {
+    setSelectedRating(selection);
+  };
+
   const renderRatings = ratings.map((rating) => (
-    <Rating key={rating} rating={rating} />
+    <Rating
+      key={rating}
+      rating={rating}
+      selectedRating={selectedRating}
+      handleSelectRating={handleSelectRating}
+    />
   ));
   return (
     <div
