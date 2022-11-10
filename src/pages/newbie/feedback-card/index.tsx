@@ -33,7 +33,7 @@ const FeedBackPage: NextPage = () => {
             className={isMobile && 'flex-1 after:left-[20px]'}
           />
         </div>
-        <div className="px-4 w-full">
+        <div className="px-4 w-full overflow-x-auto">
           <FeedbackCard />
         </div>
       </div>

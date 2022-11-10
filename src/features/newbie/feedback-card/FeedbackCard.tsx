@@ -11,7 +11,7 @@ const overpass = Overpass({
 export function FeedbackCard() {
   return (
     <div
-      className={`${overpass.className} flex flex-col text-white h-[414px] max-w-[412px] min-w-[412px] mx-auto rounded-[30px] pt-8 pl-8 feedback-card-bg`}
+      className={`${overpass.className} flex flex-col text-white h-[414px] max-w-[412px]  mx-auto rounded-[30px] pt-8 px-8 feedback-card-bg`}
     >
       {/* STAR */}
       <div className="w-12 h-12 bg-[#262F38] rounded-full flex-center">
