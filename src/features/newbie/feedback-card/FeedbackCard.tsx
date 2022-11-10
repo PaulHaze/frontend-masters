@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Overpass } from '@next/font/google';
 
 import { Rating } from './Rating';
+import { SubmitRatingBtn } from './SubmitRatingBtn';
 
 import Star from '@/assets/img/feedback/star.svg';
 
@@ -51,6 +52,11 @@ export function FeedbackCard() {
 
       {/* RATING */}
       <div className="flex justify-between mt-8">{renderRatings}</div>
+
+      {/* SUBMIT BTN */}
+      <div className="w-full flex-center flex-grow">
+        <SubmitRatingBtn />
+      </div>
     </div>
   );
 }
