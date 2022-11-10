@@ -11,10 +11,15 @@ const overpass = Overpass({
   subsets: ['latin'],
 });
 
+const ratings = ['1', '2', '3', '4', '5'];
+
 export function FeedbackCard() {
+  const renderRatings = ratings.map((rating) => (
+    <Rating key={rating} rating={rating} />
+  ));
   return (
     <div
-      className={`${overpass.className} flex flex-col text-white h-[414px] max-w-[412px]  mx-auto rounded-[30px] pt-8 px-8 feedback-card-bg`}
+      className={`${overpass.className} flex flex-col text-white h-[414px] max-w-[412px] mx-auto rounded-[30px] pt-8 px-8 feedback-card-bg`}
     >
       {/* STAR */}
       <div className="w-12 h-12 bg-[#262F38] rounded-full flex-center">
@@ -31,9 +36,7 @@ export function FeedbackCard() {
       </p>
 
       {/* RATING */}
-      <div className="flex mt-8">
-        <Rating rating="1" />
-      </div>
+      <div className="flex justify-between mt-8">{renderRatings}</div>
     </div>
   );
 }
