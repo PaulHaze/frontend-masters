@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { overpass } from './Font';
 
 import { Rating } from './Rating';
-import { SubmitRatingBtn } from './SubmitRatingBtn';
 
 import Star from '@/assets/img/feedback/star.svg';
 
@@ -14,13 +13,15 @@ import type { RatingRange } from './FeedbackContainer';
 type FeedbackCardProps = {
   selectedRating: RatingRange;
   handleSelectRating: (selection: RatingRange) => void;
+  showModal: () => void;
 };
 
-const ratings: RatingRange[] = ['1', '2', '3', '4', '5'];
+const ratings = ['1', '2', '3', '4', '5'];
 
 export function FeedbackCard({
   selectedRating,
   handleSelectRating,
+  showModal,
 }: FeedbackCardProps) {
   const renderRatings = ratings.map((rating) => (
     <Rating
@@ -53,7 +54,13 @@ export function FeedbackCard({
 
       {/* SUBMIT BTN */}
       <div className="w-full flex-center flex-grow">
-        <SubmitRatingBtn />
+        <button
+          type="button"
+          onClick={showModal}
+          className="bg-white text-[#EA7B35] rounded-[24px] w-full py-3 flex-center hover:bg-[#EA7B35] hover:text-white cursor-pointer"
+        >
+          <p className="font-semibold tracking-[2px]">SUBMIT</p>
+        </button>
       </div>
     </div>
   );
