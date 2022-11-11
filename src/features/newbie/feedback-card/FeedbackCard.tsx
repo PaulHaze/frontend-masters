@@ -2,17 +2,12 @@
 import * as React from 'react';
 
 import Image from 'next/image';
-import { Overpass } from '@next/font/google';
+import { overpass } from './Font';
 
 import { Rating } from './Rating';
 import { SubmitRatingBtn } from './SubmitRatingBtn';
 
 import Star from '@/assets/img/feedback/star.svg';
-
-const overpass = Overpass({
-  weight: 'variable',
-  subsets: ['latin'],
-});
 
 type RatingRange = '1' | '2' | '3' | '4' | '5';
 const ratings: RatingRange[] = ['1', '2', '3', '4', '5'];
