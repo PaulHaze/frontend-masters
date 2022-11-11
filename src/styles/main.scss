@@ -38,7 +38,7 @@
       @apply scale-100 transition-all duration-300;
     }
     > a {
-      @apply relative z-10;
+      @apply relative z-[1];
     }
     &:after {
       content: '';

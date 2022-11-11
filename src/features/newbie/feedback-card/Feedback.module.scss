@@ -1,0 +1,6 @@
+
+
+.container {
+  @apply flex flex-col h-[414px] w-[412px] mx-auto rounded-[30px] pt-8 px-8 bg-gradient-to-br from-[#1E252F] to-[#171E28];
+  background: radial-gradient(101.2% 101.16% at 82.91% 82.49%, #151c27 0%, #1E252F 59.84%);
+}
