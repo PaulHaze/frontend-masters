@@ -7,7 +7,7 @@ import { FeedbackCard } from './FeedbackCard';
 export type RatingRange = '1' | '2' | '3' | '4' | '5' | null;
 
 export function FeedbackContainer() {
-  const [selectedRating, setSelectedRating] = React.useState<RatingRange>(null);
+  const [selectedRating, setSelectedRating] = React.useState<RatingRange>();
   const [showModal, setShowModal] = useState(false);
 
   const handleShowHideModal = () => setShowModal((prev) => !prev);

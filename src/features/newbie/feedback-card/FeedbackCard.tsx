@@ -8,15 +8,15 @@ import { Rating } from './Rating';
 
 import Star from '@/assets/img/feedback/star.svg';
 
-import type { RatingRange } from './FeedbackContainer';
+import type { RatingRange } from './Types';
+
+const ratings: RatingRange[] = ['1', '2', '3', '4', '5'];
 
 type FeedbackCardProps = {
-  selectedRating: RatingRange;
+  selectedRating: RatingRange | undefined;
   handleSelectRating: (selection: RatingRange) => void;
   showModal: () => void;
 };
-
-const ratings = ['1', '2', '3', '4', '5'];
 
 export function FeedbackCard({
   selectedRating,

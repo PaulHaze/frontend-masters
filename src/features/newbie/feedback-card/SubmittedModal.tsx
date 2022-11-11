@@ -5,8 +5,10 @@ import { overpass } from './Font';
 
 import styles from './Feedback.module.scss';
 
+import type { RatingRange } from './Types';
+
 type SubmittedModalProps = {
-  rating: string;
+  rating: RatingRange | undefined;
   handleShowHideModal: () => void;
   hideModal: () => void;
 };

@@ -1,8 +1,8 @@
-type RatingRange = '1' | '2' | '3' | '4' | '5';
+import type { RatingRange } from './Types';
 
 type RatingProps = {
   rating: RatingRange;
-  selectedRating: RatingRange;
+  selectedRating: RatingRange | undefined;
   handleSelectRating: (selection: RatingRange) => void;
 };
 
