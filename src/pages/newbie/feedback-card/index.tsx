@@ -1,7 +1,7 @@
 import { MainLayout } from '@Layouts';
 import type { NextPage } from 'next';
 import { ExternalLink } from '@Components';
-import { FeedbackCard } from '@Features';
+import { FeedbackContainer } from '@Features';
 
 import { useResponsiveSettings } from '@/hooks';
 
@@ -34,7 +34,7 @@ const FeedBackPage: NextPage = () => {
           />
         </div>
         <div className="px-4 w-full overflow-x-auto">
-          <FeedbackCard />
+          <FeedbackContainer />
         </div>
       </div>
     </MainLayout>
