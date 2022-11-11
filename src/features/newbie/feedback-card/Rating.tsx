@@ -19,7 +19,7 @@ export function Rating({
     <button
       type="button"
       onClick={() => handleSelectRating(rating)}
-      className={`w-14 h-14 ${ratingBg} rounded-full flex-center group hover:bg-[#EA7B35] cursor-pointer`}
+      className={`w-14 h-14 ${ratingBg} rounded-full flex-center group hover:bg-[#EA7B35] cursor-pointer duration-200`}
     >
       <p className={`font-semibold ${ratingColor} group-hover:text-white`}>
         {rating}
