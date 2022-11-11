@@ -7,11 +7,16 @@ import styles from './Feedback.module.scss';
 
 type SubmittedModalProps = {
   rating: string;
+  handleShowHideModal: () => void;
+  hideModal: () => void;
 };
 
-export function SubmittedModal({ rating = '4' }: SubmittedModalProps) {
+export function SubmittedModal({ rating, hideModal }: SubmittedModalProps) {
   return (
-    <div className="fixed top-0 left-0 z-20 w-screen h-screen bg-black/50 backdrop-blur-sm flex-center px-4">
+    <div
+      onClick={hideModal}
+      className="fixed top-0 left-0 z-20 w-screen h-screen bg-black/50 backdrop-blur-sm flex-center px-4"
+    >
       <div className={`${overpass.className} ${styles.container}`}>
         {/* IMAGE */}
         <div className="flex justify-center mt-3">

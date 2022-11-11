@@ -9,16 +9,19 @@ import { SubmitRatingBtn } from './SubmitRatingBtn';
 
 import Star from '@/assets/img/feedback/star.svg';
 
-type RatingRange = '1' | '2' | '3' | '4' | '5';
+import type { RatingRange } from './FeedbackContainer';
+
+type FeedbackCardProps = {
+  selectedRating: RatingRange;
+  handleSelectRating: (selection: RatingRange) => void;
+};
+
 const ratings: RatingRange[] = ['1', '2', '3', '4', '5'];
 
-export function FeedbackCard() {
-  const [selectedRating, setSelectedRating] = React.useState<RatingRange>('3');
-
-  const handleSelectRating = (selection: RatingRange) => {
-    setSelectedRating(selection);
-  };
-
+export function FeedbackCard({
+  selectedRating,
+  handleSelectRating,
+}: FeedbackCardProps) {
   const renderRatings = ratings.map((rating) => (
     <Rating
       key={rating}
